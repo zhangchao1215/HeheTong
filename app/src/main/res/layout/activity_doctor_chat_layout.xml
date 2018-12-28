@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/mRelative_top"
+				android:orientation="vertical">
+
+	<RelativeLayout
+			android:id="@+id/mRelative_title"
+			android:layout_width="match_parent"
+			android:layout_height="45dp"
+			android:background="@color/white"
+			>
+
+		<ImageView
+				android:id="@+id/mImage_Back"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="8dp"
+				android:padding="8dp"
+				android:src="@drawable/return_black_man"
+				/>
+
+		<TextView
+				android:id="@+id/mText_name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:text="王医生"
+				android:textColor="#333333"
+
+				/>
+
+	</RelativeLayout>
+
+	<android.support.v7.widget.RecyclerView
+			android:id="@+id/mRecycler_chat"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_above="@+id/mRelative_bottom"
+			android:layout_below="@+id/mRelative_title"
+			/>
+
+	<RelativeLayout
+			android:id="@+id/mRelative_bottom"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			>
+
+
+		<RelativeLayout
+				android:id="@+id/mRelative_message"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:background="@color/white"
+				>
+
+			<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:background="@color/fenggeLines"
+					/>
+
+			<EditText
+					android:id="@+id/mEdit_Message"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/dp_30"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="@dimen/dp_16"
+					android:layout_marginRight="@dimen/dp_16"
+					android:layout_toLeftOf="@+id/mRelative_right"
+					android:background="@drawable/shape_medit_kuang"
+					/>
+
+			<RelativeLayout
+
+					android:id="@+id/mRelative_right"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true">
+
+				<Button
+						android:id="@+id/btn_more"
+						android:layout_width="32dip"
+						android:layout_height="32dip"
+						android:layout_marginLeft="4dp"
+						android:layout_marginRight="10dp"
+						android:background="@drawable/ease_type_select_btn"
+						android:visibility="visible"/>
+
+
+				<Button
+						android:id="@+id/mBut_send"
+						android:layout_width="@dimen/dp_60"
+						android:layout_height="@dimen/dp_30"
+						android:layout_centerVertical="true"
+						android:layout_marginRight="@dimen/dp_16"
+						android:background="@drawable/shape_but_user"
+						android:text="发送"
+						android:textColor="@color/white"
+						android:visibility="gone"
+						/>
+			</RelativeLayout>
+
+
+		</RelativeLayout>
+
+		<LinearLayout
+				android:id="@+id/mLinear_bottom"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/dp_120"
+				android:layout_below="@+id/mRelative_message"
+				android:visibility="gone">
+
+
+			<TextView
+					android:id="@+id/mText_image_picture"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="@dimen/dp_16"
+					android:layout_marginTop="@dimen/dp_8"
+					android:drawablePadding="6dp"
+					android:drawableTop="@drawable/ease_chat_image_normal"
+					android:gravity="center"
+					android:padding="@dimen/dp_8"
+					android:text="相册"
+					/>
+
+			<TextView
+					android:id="@+id/mText_image_takepic"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="@dimen/dp_16"
+					android:layout_marginTop="@dimen/dp_8"
+					android:drawablePadding="6dp"
+					android:drawableTop="@drawable/ease_chat_takepic_normal"
+					android:gravity="center"
+					android:padding="@dimen/dp_8"
+					android:text="拍照"
+					/>
+
+
+		</LinearLayout>
+
+
+		<RelativeLayout
+				android:id="@+id/mRelative_question"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/dp_210"
+				android:background="@color/white"
+				android:visibility="gone"
+				>
+
+			<android.support.v7.widget.RecyclerView
+					android:id="@+id/mRecycler_question"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_above="@+id/mBut_sendQuestion"
+					android:layout_marginBottom="@dimen/dp_16"
+					android:layout_marginTop="24dp"
+					/>
+
+
+			<Button
+					android:id="@+id/mBut_sendQuestion"
+					android:layout_width="match_parent"
+					android:layout_height="45dp"
+					android:layout_alignParentBottom="true"
+					android:background="@color/colorTextYangXIn"
+					android:text="确定"
+					android:textColor="@color/white"
+					/>
+
+
+		</RelativeLayout>
+
+
+	</RelativeLayout>
+</RelativeLayout>

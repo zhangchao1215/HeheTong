@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/SheTai_Relative_Listener"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+    >
+
+    <!--<RelativeLayout-->
+    <!--android:visibility="gone"-->
+    <!--android:layout_width="160dp"-->
+    <!--android:layout_height="160dp"-->
+    <!--android:layout_margin="15dp"-->
+    <!--android:background="@drawable/shetai_relative_item">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/SheTai_Image"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:src="@drawable/jcwz"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--/>-->
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/SheTai_CheckBox"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginRight="5dp"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:background="@drawable/checkbox_selector"-->
+    <!--android:button="@null"-->
+    <!--android:clickable="false"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="@drawable/shetai_relative_item2"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/SheTai_mText"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:text="舌苔种类"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/shetai_relative_item">
+        >
+
+        <ImageView
+            android:id="@+id/SheTai_Image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/yinying_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/jcwz"
+            />
+
+
+        <ImageView
+            android:id="@+id/yinying_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/shetaidi4x"
+            android:visibility="gone"
+            />
+
+        <CheckBox
+            android:id="@+id/SheTai_CheckBox"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/checkbox_selector"
+            android:button="@null"
+            android:clickable="false"/>
+
+        <TextView
+            android:id="@+id/SheTai_mText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:text="舌苔"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

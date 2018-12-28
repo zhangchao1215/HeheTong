@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="120dp"
+              android:orientation="horizontal"
+              android:weightSum="2"
+              android:layout_marginTop="16dp"
+    >
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Life_UserCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您的编号"
+
+                />
+
+            <TextView
+                android:id="@+id/Life_UserCodeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="063215"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Life_Money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收益        "
+
+                />
+
+            <TextView
+                android:id="@+id/Life_MoneyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="00000"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Life_KeYongTicekt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可用资产券"
+
+                />
+
+            <TextView
+                android:id="@+id/Life_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="2.00"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Life_ZengZhiTicket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="增值券"
+
+                />
+
+            <TextView
+                android:id="@+id/Life_ZengZhiTicketText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="165800"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Life_Vip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIP级别"
+
+                />
+
+            <TextView
+                android:id="@+id/Life_VipText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="公司账户"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Life_HeHuoMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合伙人收益"
+
+                />
+
+            <TextView
+                android:id="@+id/Life_HeHuoMoneyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="30.00"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Life_DongJieTicket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="冻结资产券"
+
+                />
+
+            <TextView
+                android:id="@+id/Life_DongJieTickerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="公司账户"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Life_guQuanCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="股权数量"
+
+                />
+
+            <TextView
+                android:id="@+id/Life_guQuanConutText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="10000"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

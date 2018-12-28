@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:id="@+id/EmptyView1"
+              tools:context="com.example.heyikun.heheshenghuo.HeHeLifeFragment">
+
+
+    <com.example.heyikun.heheshenghuo.modle.util.PullDownScrollView
+        android:id="@+id/refresh_root"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorTextWomen"
+        android:orientation="vertical"
+        >
+
+        <ScrollView
+            android:id="@+id/mScrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/loding"
+            android:background="@color/white"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/mScrollview_Linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@color/colorTextWomen"
+                    >
+
+                    <ImageView
+                        android:id="@+id/life_shengyinImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:padding="5dp"
+                        android:src="@drawable/wylfoff4x"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@+id/life_shengyinImage"
+                        android:text="五音疗法"
+                        android:textColor="@color/white"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="和合自诊"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/Life_UserImage"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/touxiang_nan_man_4x"
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/Life_UserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@+id/Life_UserImage"
+                        android:text="注册登录"
+                        android:textColor="@color/white"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/Man_SaoMiao_Image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="18dp"
+                        android:drawableLeft="@drawable/saomiao_woman_4x"
+                        android:drawablePadding="8dp"
+                        android:gravity="center"
+                        android:text="症状自诊"
+
+                        android:textColor="@color/colorTextWomen"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/shouyetupian2_man_4x"
+                        android:visibility="gone"
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/Man_LeftImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Man_SaoMiao_Image"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/shoushaoyangsanjiaojing_woman3x"/>
+
+                    <ImageView
+                        android:id="@+id/Man_AnimatorImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Man_SaoMiao_Image"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/dongtaisaomiao_woman_4x"/>
+
+                    <LinearLayout
+                        android:layout_width="190dp"
+                        android:layout_height="400dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <include
+                                layout="@layout/activity_new_life_yangcai"
+                                android:visibility="gone"/>
+
+
+                            <GridView
+                                android:id="@+id/life_gridview"
+                                android:layout_width="188dp"
+                                android:layout_height="300dp"
+                                android:layout_alignParentRight="true"
+                                android:numColumns="2"
+                                />
+
+                            <RelativeLayout
+                                android:id="@+id/relative2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/life_gridview"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/jztz_woman_4x"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/life_vote_copy"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:textColor="@color/black"
+                                    />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/ceshi_result"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/relative2"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginTop="5dp"
+                                />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/JingMai_mBut"
+                        android:layout_width="136dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/Man_LeftImage"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/jingmai_but_women"
+                        android:text="经脉"
+                        android:textColor="@color/colorTextWomen"/>
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorViewLines"/>
+                />
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/new_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    app:tabIndicatorColor="#E68073"
+                    app:tabSelectedTextColor="@color/colorTextWomen"
+                    app:tabTextColor="#F5A99F"
+
+
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/colorViewLines"/>
+
+                />
+
+                <com.youth.banner.Banner
+                    app:indicator_height="6dp"
+                    app:indicator_margin="5dp"
+                    app:indicator_width="6dp"
+                    android:id="@+id/Image_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"/>
+
+                <ImageView
+                    android:id="@+id/mImage_VipLink"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:src="@drawable/vip_life"
+                    android:visibility="gone"
+                    />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/mTabLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/Main_ImageSmallSetting"
+                        android:visibility="gone"
+                        app:tabIndicatorColor="#E68073"
+                        app:tabSelectedTextColor="@color/colorTextWomen"
+                        app:tabTextColor="#F5A99F"
+                        />
+
+                    <ImageView
+                        android:id="@+id/Main_ImageSmallSetting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:padding="5dp"
+                        android:src="@drawable/xiaoshezhi_4man"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+                <com.example.heyikun.heheshenghuo.modle.util.NoScrollViewPager
+                    android:id="@+id/Life_Viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:visibility="gone"/>
+
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/Life_day"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="19dp"-->
+                <!--android:layout_marginTop="2dp"-->
+                <!--android:gravity="center"-->
+                <!--android:text="22"-->
+                <!--android:textColor="#333333"-->
+                <!--android:textSize="20dp"/>-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/Life_Time"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="19dp"-->
+                <!--android:gravity="center"-->
+                <!--android:text="2017/09"-->
+                <!--android:textSize="12dp"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                <!--android:layout_width="1dp"-->
+                <!--android:layout_height="26dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:background="#E6E6E6"/>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/Life_gregorian"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginTop="2dp"-->
+                <!--android:gravity="center"-->
+                <!--android:text="处暑"-->
+                <!--android:textColor="#333333"/>-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/Life_lunar"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:text="农历七月初二"/>-->
+
+                <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/Life_cope"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="15dp"-->
+                <!--android:text="处暑，即为“出暑”，是炎热离开的意思。处暑节气意味着即将进入气象意义的秋天，处暑后中国长江以北地区气温逐渐下降。处暑，即为“出暑”，是炎热离开的意思。处暑节气意味着即将进入气象意义的秋天，处暑后中国长江以北地区气温逐渐下降"/>-->
+                <include layout="@layout/activity_include_eat_what"/>
+
+
+                <include
+                    layout="@layout/activity_shouye_tizhi"
+                    android:visibility="gone"
+                    />
+
+                <include
+                    layout="@layout/activity_shouye_lines"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/mLifeRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <RelativeLayout
+                    android:id="@+id/loadMall_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/white"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="正在加载。。。"
+
+                        />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@+id/text"
+                        android:indeterminateDrawable="@drawable/dr_progress"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </com.example.heyikun.heheshenghuo.modle.util.PullDownScrollView>
+</LinearLayout>

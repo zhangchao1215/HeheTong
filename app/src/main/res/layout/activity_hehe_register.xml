@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Register_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/close_man"
+        android:drawablePadding="5dp"
+        android:text="关闭"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/logo4x"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:visibility="visible"
+        >
+
+        <EditText
+            android:id="@+id/Register_Edit_PhoneNumer"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignBaseline="@+id/Register_getAuthCode"
+            android:layout_alignBottom="@+id/Register_getAuthCode"
+            android:layout_marginLeft="50dp"
+            android:background="@null"
+            android:hint="请输入手机号"
+            android:maxLength="11"
+            android:numeric="integer"/>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/Register_getAuthCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:padding="5dp"
+            android:text="获取验证码"
+            android:textColor="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/Register_Edit_Pwd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@null"
+        android:hint="请输入验证码"
+        />
+
+
+    <Button
+        android:id="@+id/Register_ButNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/queding_but"
+        android:text="下一步"
+        android:textColor="@color/white"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+
+        >
+
+        <CheckBox
+            android:id="@+id/mCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/text_xieyi"
+            android:checked="true"
+            />
+
+
+        <TextView
+            android:id="@+id/text_xieyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="用户协议"
+            />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

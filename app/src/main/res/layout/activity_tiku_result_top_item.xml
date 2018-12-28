@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/Linear"
+              android:layout_width="305dp"
+              android:layout_height="73dp"
+              android:layout_marginLeft="16dp"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/tiku_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:background="@color/color_ccc"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="22dp"
+            android:layout_toLeftOf="@+id/tiku_ceshi_text"
+            android:layout_toRightOf="@+id/tiku_image"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tiku_textOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="睡眠质量评测"
+                />
+
+            <TextView
+                android:id="@+id/tiku_textTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text=""
+                android:textColor="@color/color999"
+                android:textSize="12dp"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tiku_ceshi_text"
+            android:layout_width="67dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="#e6f0ff"
+            android:gravity="center"
+            android:text="查看"
+            android:textColor="@color/colorTextYangXIn"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_ccc"
+        />
+
+</LinearLayout>

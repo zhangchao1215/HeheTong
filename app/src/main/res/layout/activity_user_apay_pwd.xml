@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ChongZhi_PhoneVerify_Linear"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:id="@+id/Image_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/return_black_man"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置支付密码"
+            android:textColor="@color/Black"
+            android:textSize="16dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:text="支付密码是您在商城购买商品结算时，使用账户余额支付时需要输入的密码，请认真填写并牢记。"/>
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/ChongZhi_NewPwdedit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="16dp"
+        android:background="@null"
+        android:hint="请输入支付密码"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/ChongZhiNextNewPwd"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:hint="请再次输入支付密码"
+        android:inputType="textPassword"
+        android:maxLength="6"/>
+
+    <Button
+        android:id="@+id/mButChongZhi_commit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/next_but"
+        android:text="提交"
+        android:textColor="@color/white"
+
+        />
+</LinearLayout>

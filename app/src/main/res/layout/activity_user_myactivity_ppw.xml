@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="264dp"
+        android:layout_height="272dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_relative"
+        android:orientation="vertical"
+        android:src="@drawable/xiaoxi_di4x">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_horizontal"
+            android:text="活动参与人"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/mText_allPeople"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center_horizontal"
+            android:text="共2位" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/shape_blue_biankuang">
+
+            <TextView
+                android:id="@+id/Join_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="大锤"
+                android:textColor="@color/colorTextYangXIn" />
+
+            <TextView
+                android:id="@+id/Join_PhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/Join_Name"
+                android:text="18553990529"
+                android:textColor="@color/colorTextYangXIn"
+
+                />
+
+            <ImageView
+                android:id="@+id/Image_GotoPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/csjl_jt_man_4x" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/shape_blue_biankuang">
+
+            <TextView
+                android:id="@+id/Join_Name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="大锤子"
+                android:textColor="@color/colorTextYangXIn" />
+
+            <TextView
+                android:id="@+id/Join_PhoneNumber2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/Join_Name2"
+                android:text="18553990529"
+                android:textColor="@color/colorTextYangXIn"
+
+                />
+
+            <ImageView
+                android:id="@+id/Image_GotoPhone2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/csjl_jt_man_4x" />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/mBut_mActivity_Ikonw"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/queding_but"
+            android:text="我知道啦"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

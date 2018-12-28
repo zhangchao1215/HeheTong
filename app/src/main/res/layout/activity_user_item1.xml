@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="200dp"
+              android:layout_height="290dp">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="290dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/yangxin4x"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="心理数据"
+                android:textColor="@color/Black"
+                android:textSize="16dp"
+                />
+        </RelativeLayout>
+
+        <include layout="@layout/activity_background_black_lines"/>
+
+
+        <RelativeLayout
+            android:id="@+id/user_xin_relative"
+            android:visibility="visible"
+            android:layout_width="182dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bggr4x">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/one_zhu_relative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="28dp">
+
+                    <ImageView
+                        android:id="@+id/four_zhuImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:src="@drawable/four_zhu"
+                        android:scaleType="fitXY"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fang_four_small"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/one_zhu_relative"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="28dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/four_quan4x"
+                        />
+
+                    <TextView
+                        android:textSize="12dp"
+                        android:textColor="@color/white"
+                        android:id="@+id/user_item_text4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="69"
+                        />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <RelativeLayout
+                    android:id="@+id/two_zhu_relative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="28dp">
+
+                    <ImageView
+                        android:id="@+id/five_zhuImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:src="@drawable/five_zhu"
+                        android:scaleType="fitXY"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fang_zong"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/two_zhu_relative"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="28dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/five_quan4x"
+                        />
+
+                    <TextView
+                        android:id="@+id/user_item_text5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="69"
+                        android:textSize="12dp"
+                        android:textColor="@color/white"
+                        />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/Three_zhu_relative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="28dp">
+
+                    <ImageView
+                        android:id="@+id/six_zhuImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:src="@drawable/six_zhux"
+                        android:scaleType="fitXY"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fang_hui"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/Three_zhu_relative"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="28dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/sic_quan4x"
+                        />
+
+                    <TextView
+                        android:textSize="12dp"
+                        android:textColor="@color/white"
+                        android:id="@+id/user_item_text6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="69"
+                        />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/user_xin_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/user_item_ceshi4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableLeft="@drawable/fang_four_big"
+                android:drawablePadding="11dp"
+                android:text="心理健康测试"
+                />
+
+            <TextView
+                android:id="@+id/user_item_ceshi5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:drawableLeft="@drawable/fang_five_big"
+                android:drawablePadding="11dp"
+                android:text="抑郁指数测试"
+                />
+
+            <TextView
+                android:id="@+id/user_item_ceshi6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:drawableLeft="@drawable/fang_six_big"
+                android:drawablePadding="11dp"
+                android:text="家庭关系测试"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/user_xin_null_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorViewLines"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="58dp"
+                android:src="@drawable/wushuju4x"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="你还没有测试"
+                />
+
+            <Button
+                android:id="@+id/user_xin_but"
+                android:layout_width="148dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="21dp"
+                android:background="@drawable/shape_but_user"
+                android:text="开始自我检测"
+                android:textColor="@color/white"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

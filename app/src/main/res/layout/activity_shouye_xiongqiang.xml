@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/Self_Diagnose_Saomiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/man_saomiao_icon" />
+
+        <TextView
+            android:id="@+id/Self_Diagnose_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/Self_Diagnose_Saomiao"
+            android:text="返回"
+            android:textColor="#73aae6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="自我诊断"
+            android:textColor="#73aae6"
+            android:textSize="16dp"
+
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="头颈"
+            android:textColor="#73aae6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="胸腹"
+            android:textColor="#73aae6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="腰背"
+            android:textColor="#73aae6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="生殖"
+            android:textColor="#73aae6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="皮肤"
+            android:textColor="#73aae6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="全身"
+            android:textColor="#73aae6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="经络"
+            android:textColor="#73aae6" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/XQ_ImageKuang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="37dp"
+            android:src="@drawable/man_right" />
+
+        <TextView
+            android:id="@+id/ZhenDuan_TextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="46dp"
+            android:text="胸腹"
+            android:textColor="#73aae6" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ZhenDuan_TextTitle"
+            android:layout_marginRight="88dp"
+            android:layout_marginTop="14dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/self_zhengzhuang_shape_true"
+                android:button="@null"
+                android:gravity="center"
+                android:text="咳喘、头疼、胸口闷"
+                android:textColor="#73aae6"
+                android:textSize="10dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/self_zhengzhuang_shape_true"
+                android:button="@null"
+                android:gravity="center"
+                android:text="头疼、手麻"
+                android:textColor="#73aae6"
+                android:textSize="10dp" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ZhenDuan_TextTitle"
+            android:layout_marginRight="72dp"
+            android:layout_marginTop="14dp"
+            android:text="请选择您的症状："
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ZhenDuan_TextTitle"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="40dp"
+
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/self_zhengzhuang_shape_true"
+                android:button="@null"
+                android:gravity="center"
+                android:text="咳嗽"
+                android:textColor="#73aae6" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/self_zhengzhuang_shape_true"
+                android:button="@null"
+                android:gravity="center"
+                android:text="哮喘"
+                android:textColor="#73aae6" />
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/self_zhengzhuang_shape_true"
+                android:button="@null"
+                android:gravity="center"
+                android:text="胸闷"
+                android:textColor="#73aae6" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/XQ_ImageKuang"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/anniu_man" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/XQ_ImageKuang"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="#73aae6"
+            android:textSize="16dp" />
+
+
+        <ImageView
+            android:layout_width="141dp"
+            android:layout_height="400dp"
+            android:src="@drawable/man_left_banla" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

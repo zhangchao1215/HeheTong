@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/Input_EmailLinear"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:id="@+id/Image_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/return_black_man"
+
+            />
+
+        <TextView
+            android:id="@+id/mText_TitleEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="邮箱验证重置密码"
+            android:textColor="@color/Black"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/activity_user_backgroundline" />
+
+
+
+        <TextView
+            android:gravity="center_vertical"
+            android:drawablePadding="12dp"
+            android:drawableLeft="@drawable/tishitiao_man_4x"
+            android:id="@+id/mText_Shuru_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:text="请输入绑定的邮箱" />
+
+
+
+    <EditText
+        android:id="@+id/mailbox_edit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@null"
+        android:hint="请输入"
+        android:layout_marginLeft="16dp"
+        />
+
+
+    <Button
+        android:id="@+id/mBut_Sendemail"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/next_but"
+        android:text="发送验证邮件"
+        android:textColor="@color/white" />
+
+
+
+</LinearLayout>

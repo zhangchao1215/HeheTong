@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+    >
+
+    <FrameLayout
+        android:id="@+id/Man_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_relative"/>
+
+    <RelativeLayout
+        android:id="@+id/bottom_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <RadioGroup
+            android:id="@+id/bottom_RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <RadioButton
+                android:id="@+id/mRadio_HeheLife"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/shouye_life_selector"
+                android:gravity="center_horizontal"
+                android:text="健康自诊"
+                android:textSize="12dp"
+                android:textColor="@drawable/shouye_textcolor"/>
+
+            <RadioButton
+                android:id="@+id/mRadio_FaXian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/shouye_faxian_selector"
+                android:gravity="center_horizontal"
+                android:text="和合健康"
+                android:textSize="12dp"
+                android:textColor="@drawable/shouye_textcolor"/>
+
+
+            <RadioButton
+                android:id="@+id/mRadio_User"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:textSize="12dp"
+                android:drawableTop="@drawable/shouye_genren_selector"
+                android:gravity="center_horizontal"
+                android:text="数据管理"
+                android:textColor="@drawable/shouye_textcolor"/>
+            <RadioButton
+                android:id="@+id/mRadio_Serve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/shouye_serve_selector"
+                android:gravity="center_horizontal"
+                android:text="和合服务"
+                android:textSize="12dp"
+                android:textColor="@drawable/shouye_textcolor"/>
+
+            <RadioButton
+                    android:textSize="12dp"
+                android:id="@+id/mRadio_Shangcheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/shouye_shangcheng_selector"
+                android:gravity="center_horizontal"
+                android:text="和合生态"
+                android:textColor="@drawable/shouye_textcolor"/>
+
+
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/women_RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/mRadio_HeheLife_women"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/shouye_life_women_selector"
+                android:gravity="center_horizontal"
+                android:text="和合自诊"
+                android:textColor="@drawable/shouye_women_textcolor"/>
+
+            <RadioButton
+                android:id="@+id/mRadio_FaXian_women"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/shouye_faxian_women_selector"
+                android:gravity="center_horizontal"
+                android:text="和合健康"
+                android:textColor="@drawable/shouye_women_textcolor"/>
+            <RadioButton
+                android:id="@+id/mRadio_User_women"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/shouye_genren_women_selector"
+                android:gravity="center_horizontal"
+                android:text="数据管理"
+                android:textColor="@drawable/shouye_women_textcolor"/>
+
+
+            <RadioButton
+                android:id="@+id/mRadio_Serve_women"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/shouye_serve_women_selector"
+                android:gravity="center_horizontal"
+                android:text="和合服务"
+                android:textColor="@drawable/shouye_women_textcolor"/>
+
+            <RadioButton
+                android:id="@+id/mRadio_Shangcheng_women"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/shouye_shangcheng_women_selector"
+                android:gravity="center_horizontal"
+                android:text="和合生态"
+                android:textColor="@drawable/shouye_women_textcolor"/>
+
+
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/bottom_relative"
+        android:background="#E4E4E4"/>
+
+</RelativeLayout>

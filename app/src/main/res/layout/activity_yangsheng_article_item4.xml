@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/master_article_linear"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/master_article_imageName"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/Master_edit_article"
+            android:layout_width="48dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/shape_master_linear"
+            android:gravity="center"
+            android:text="编辑"/>
+
+        <TextView
+            android:id="@+id/master_article_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/master_article_imageName"
+            android:text="和合生活"
+            />
+
+        <TextView
+            android:id="@+id/master_article_Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/master_article_Name"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/master_article_imageName"
+            android:text="2017"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="11dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/master_article_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/master_article_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="5"
+            />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/master_article_imageOne"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="6dp"
+            />
+
+        <ImageView
+            android:id="@+id/master_article_imageTwo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/master_article_imageOne"
+            />
+
+        <ImageView
+
+            android:id="@+id/master_article_imageThree"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/master_article_imageOne"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="3dp"
+            />
+
+        <ImageView
+            android:id="@+id/master_article_imageFour"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/master_article_imageOne"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/master_article_imageThree"
+            />
+
+        <ImageView
+            android:id="@+id/master_delete_article"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/shanchu_ysdr4x"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

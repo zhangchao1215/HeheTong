@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/Faxian_Linear"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#F0F0EF"
+              android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="170dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="12dp"
+            >
+
+            <ImageView
+                android:id="@+id/Faxian_DakaImage"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:scaleType="centerCrop"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/Faxian_DakaImage"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/Faxian_TextDakaOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="11dp"
+                    android:text="大咖说"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/Faxian_TextDakaTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Faxian_TextDakaOne"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:text="分析病例"
+                    android:textSize="14dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/Faxian_TextNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="7dp"
+                    android:text="38片"
+                    />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

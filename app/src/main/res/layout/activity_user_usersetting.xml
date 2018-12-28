@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/main_Linear"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:id="@+id/Image_Back"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/return_black_man"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="个人资料"
+            android:textColor="@color/Black"
+            android:textSize="18dp"
+            />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/activity_background_black_lines"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/UserSetting_userImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/touxiang_nan_man_4x"/>
+
+        <TextView
+            android:id="@+id/UserSetting_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/UserSetting_userImage"
+            android:textColor="@color/Black"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/mText_JianJie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/UserSetting_userName"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/UserSetting_userImage"
+            android:padding="5dp"
+            android:text="简介：我这人很懒，什么都没留下"
+            android:textSize="12dp"
+            />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/activity_user_backgroundline"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:drawableLeft="@drawable/tishitiao_man_4x"
+        android:drawablePadding="12dp"
+        android:gravity="center"
+        android:text="身体信息"
+        />
+
+
+    <include
+
+        layout="@layout/activity_usersetting_usermessage"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorViewLines"/>
+
+    <RelativeLayout
+        android:id="@+id/ZhangHao_safety"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:drawableLeft="@drawable/zhanghaoanquan4x"
+            android:drawablePadding="16dp"
+            android:gravity="center"
+            android:text="账号安全"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/gengduo_man"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/activity_background_black_lines"/>
+
+    <RelativeLayout
+        android:id="@+id/Address_administration"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:drawableLeft="@drawable/dizhiguanli4x"
+            android:drawablePadding="16dp"
+            android:gravity="center"
+            android:text="地址管理"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/gengduo_man"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+
+	<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_centerInParent="true">
+
+		<com.example.heyikun.heheshenghuo.modle.util.ResizeAbleSurfaceView
+				android:id="@+id/surfaceView"
+				android:layout_width="300dp"
+				android:layout_height="500dp"
+				android:layout_gravity="center"
+				/>
+
+	</FrameLayout>
+
+	<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@drawable/camera_bg"
+			>
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/dp_70"
+				android:layout_centerHorizontal="true"
+				android:gravity="center">
+
+			<ImageView
+					android:id="@+id/mImage_left"
+					android:layout_width="@dimen/dp_64"
+					android:layout_height="@dimen/dp_50"
+					android:layout_gravity="center"
+					android:layout_marginRight="8dp"
+					android:visibility="gone"
+					/>
+
+			<ImageView
+					android:id="@+id/mImage_right"
+					android:layout_width="@dimen/dp_64"
+					android:layout_height="@dimen/dp_50"
+					android:layout_gravity="center"
+					android:layout_marginLeft="8dp"
+					android:visibility="gone"
+					/>
+
+			<ImageView
+					android:id="@+id/mImage_handOne"
+					android:layout_width="@dimen/dp_64"
+					android:layout_height="@dimen/dp_50"
+					android:layout_gravity="center"
+					android:src="@drawable/hand"
+					android:visibility="gone"
+					/>
+
+
+			<LinearLayout
+					android:id="@+id/mLinear_left"
+					android:layout_width="@dimen/dp_64"
+					android:layout_height="@dimen/dp_50"
+					android:layout_marginRight="8dp"
+					android:background="@color/color999"
+					android:gravity="center"
+					android:orientation="vertical"
+
+					>
+
+
+				<ImageView
+						android:id="@+id/leftImage"
+						android:layout_width="@dimen/dp_30"
+						android:layout_height="@dimen/dp_30"
+						android:src="@drawable/hand_left"
+						/>
+
+				<TextView
+						android:id="@+id/mText_left"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="左手掌"
+						android:textColor="@color/white"
+						android:textSize="@dimen/dp_12"
+						/>
+
+			</LinearLayout>
+
+			<LinearLayout
+					android:id="@+id/mLinear_right"
+					android:layout_width="@dimen/dp_64"
+					android:layout_height="@dimen/dp_50"
+					android:layout_marginLeft="8dp"
+					android:background="@color/color999"
+					android:gravity="center"
+					android:orientation="vertical"
+					>
+
+				<ImageView
+						android:id="@+id/rightImage"
+						android:layout_width="@dimen/dp_30"
+						android:layout_height="@dimen/dp_30"
+						android:src="@drawable/hand_right"
+						/>
+
+				<TextView
+						android:id="@+id/mText_Right"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="右手掌"
+						android:textColor="@color/white"
+						android:textSize="@dimen/dp_12"
+						/>
+			</LinearLayout>
+
+
+		</LinearLayout>
+
+
+		<ImageView
+				android:id="@+id/mImage_dismiss"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:layout_marginRight="8dp"
+				android:layout_marginTop="@dimen/dp_16"
+				android:padding="8dp"
+				android:src="@drawable/dismiss_img"
+				/>
+
+		<ImageView
+				android:id="@+id/mImage_commit"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="8dp"
+				android:layout_marginTop="@dimen/dp_16"
+				android:padding="@dimen/dp_8"
+				android:src="@drawable/image_commit"
+				/>
+
+
+	</RelativeLayout>
+
+	<RelativeLayout
+			android:id="@+id/homecamera_bottom_relative"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dp_60"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="@dimen/dp_16"
+			>
+
+		<ImageView
+				android:id="@+id/img_camera"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:src="@drawable/camera"
+				/>
+
+		<ImageView
+				android:id="@+id/flash_light"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="@dimen/dp_32"
+				android:layout_toLeftOf="@+id/img_camera"
+				android:padding="8dp"
+				android:src="@drawable/falsh"
+				/>
+
+		<ImageView
+				android:id="@+id/camera_frontback"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="@dimen/dp_32"
+				android:layout_toRightOf="@+id/img_camera"
+				android:padding="8dp"
+				android:src="@drawable/xuanzhuan"
+
+
+				/>
+
+
+	</RelativeLayout>
+
+</RelativeLayout>

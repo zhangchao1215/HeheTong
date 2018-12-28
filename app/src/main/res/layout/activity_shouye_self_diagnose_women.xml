@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/mLinear_Popup"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <TextView
+            android:id="@+id/Self_Diagnose_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@drawable/saomiao_woman_4x"
+            android:drawablePadding="10dp"
+            android:text="返回"
+            android:textColor="@color/colorTextWomen"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="症状自诊"
+            android:textColor="@color/colorTextWomen"
+            android:textSize="16dp"
+
+            />
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/Self_TitleTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:tabIndicatorColor="#E68073"
+        app:tabSelectedTextColor="@color/colorTextWomen"
+        app:tabTextColor="#F5A99F"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--人形图片所在  把它隐藏了-->
+        <RelativeLayout
+            android:id="@+id/Self_Relative_PersonImage"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:visibility="visible"
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shoyyebeijing1_man_4x"
+                />
+
+            <ImageView
+                android:id="@+id/Self_ManImage"
+                android:layout_width="170dp"
+                android:layout_height="460dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/zushaoyinshenjing_4woman"/>
+
+            <!--痛点图片，做成动态动画，一直动-->
+
+
+            <ImageView
+                android:id="@+id/Self_ManSaomiaoImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/dongtaisaomiao_woman_4x"
+                />
+
+        </RelativeLayout>
+
+
+        <!--把症状这些东西所在位置，隐藏了  就是查看详情-->
+        <RelativeLayout
+            android:id="@+id/Self_YinHuan_Relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/Self_XiongQiang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/zhenduan_women"/>
+
+            <TextView
+                android:id="@+id/mText_XiongFu"
+                android:layout_width="17dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="88dp"
+                android:layout_marginTop="50dp"
+                android:singleLine="false"
+                android:text="胸腹"
+                android:textColor="@color/colorTextWomen"/>
+
+            <TextView
+                android:id="@+id/Self_TextYinhuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="40dp"
+                android:text="可能隐患"
+                android:textColor="@color/colorTextWomen"/>
+
+            <TextView
+                android:id="@+id/Self_TextKesou"
+                android:layout_width="60dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/Self_TextYinhuan"
+                android:layout_marginRight="20dp"
+                android:maxLines="2"
+                android:text="肺气肿、咳喘胸隔膜炎等"
+                android:textSize="12dp"
+
+                />
+
+            <Button
+                android:id="@+id/Self_LookDetail_but"
+                android:layout_width="78dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/Self_TextKesou"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/self_look_detail_women"
+                android:text="查看详情"
+                android:textColor="@color/colorTextWomen"/>
+
+        </RelativeLayout>
+        <!--这是隐藏的那张大图片，做所有诊断的功能,诊断的框框-->
+
+        <RelativeLayout
+            android:id="@+id/Self_Relative_Kuang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/XQ_ImageKuang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="17dp"
+                android:layout_marginTop="37dp"
+                android:src="@drawable/life_kuang_women"/>
+
+            <TextView
+                android:id="@+id/ZhenDuan_TextTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="46dp"
+                android:text="胸腹"
+                android:textColor="@color/colorTextWomen"/>
+
+
+            <!--这是隐藏才上面的，内容是三个字的-->
+
+
+            <RelativeLayout
+                android:id="@+id/Self_mLinearZhengZhuang"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ZhenDuan_TextTitle"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                >
+
+
+                <!--选择症状，画的radiobutton这个没有选中效果 后面带×，点击删除-->
+
+
+                <RadioButton
+                    android:id="@+id/Self_RadioChaHao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/self_zhengzhuang_shape_false_women"
+                    android:button="@null"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/chazi_woman_4x"
+                    android:gravity="center"
+                    android:text="咳喘"
+                    android:textColor="@color/colorTextWomen"
+                    android:textSize="10dp"
+                    android:visibility="gone"
+
+                    />
+
+                <!--<com.google.android.flexbox.FlexboxLayout-->
+                <!--android:id="@+id/Self_mLinearDongtaiSecond"-->
+                <!--android:layout_width="170dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:clipChildren="true"-->
+                <!--app:flexWrap="wrap"-->
+                <!--app:justifyContent="flex_start"-->
+                <!--/>-->
+
+                <RadioButton
+                    android:id="@+id/Self_mLinearDongtaiSecond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/self_zhengzhuang_shape_false_women"
+                    android:button="@null"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/chazi_woman_4x"
+                    android:gravity="center"
+                    android:text="咳喘"
+                    android:textColor="@color/colorTextWomen"
+                    android:textSize="10dp"
+                    android:visibility="gone"
+                    />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/Self_SelectorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/Self_mLinearZhengZhuang"
+                android:layout_marginRight="72dp"
+                android:layout_marginTop="10dp"
+                android:text="请选择您的症状："
+
+                />
+            <!--这是第一层的Recyclerview加载数据-->
+
+            <ScrollView
+                android:id="@+id/mScrollview"
+                android:layout_width="170dp"
+                android:layout_height="200dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/Self_SelectorText"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    >
+
+
+                    <com.loction.choose.flowchooselibrary.weight.FlowChooseLayout
+                        android:id="@+id/First_RecyclerView"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        app:borderColor="@color/colorTextWomen"
+                        app:borderWidth="1dp"
+                        app:checked_back_ground="@color/colorTextWomen"
+                        app:checked_text_color="@color/white"
+                        app:childSpacing="5dp"
+                        app:isRadiusAdjustBounds="true"
+                        app:rowSpacing="5dp"
+                        app:text_color="@color/colorTextWomen"/>
+
+                    <!--这是第二层的RecycleView加载数据-->
+                    <!--这是第二层的RecycleView加载数据-->
+                    <com.loction.choose.flowchooselibrary.weight.FlowChooseLayout
+                        android:id="@+id/Second_RecyclerView"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        app:borderColor="@color/colorTextWomen"
+                        app:borderWidth="1dp"
+                        app:checked_back_ground="@color/colorTextWomen"
+                        app:checked_text_color="@color/white"
+                        app:childSpacing="5dp"
+                        app:flow="true"
+                        app:isMultiSelect="true"
+                        app:isRadiusAdjustBounds="true"
+                        app:rowSpacing="5dp"
+
+                        app:text_color="@color/colorTextWomen"/>
+                    <!--加载第三层数据-->
+                    <com.loction.choose.flowchooselibrary.weight.FlowChooseLayout
+                        android:id="@+id/Three_RecyclerView"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        app:borderColor="@color/colorTextWomen"
+                        app:borderWidth="1dp"
+                        app:checked_back_ground="@color/colorTextWomen"
+                        app:checked_text_color="@color/white"
+                        app:childSpacing="5dp"
+                        app:flow="true"
+                        app:isMultiSelect="true"
+                        app:isRadiusAdjustBounds="true"
+                        app:rowSpacing="5dp"
+                        app:text_color="@color/colorTextWomen"/>
+                </RelativeLayout>
+            </ScrollView>
+
+            <!--这个布局是诊断结果-&#45;&#45;咳嗽，咳嗽怎么治-->
+            <LinearLayout
+                android:id="@+id/ZhenDuan_JieGuoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/Self_SelectorText"
+                android:layout_marginRight="25dp"
+                android:orientation="vertical"
+                android:padding="2dp"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/JieGuo_Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="16dp"
+                    />
+
+                <ScrollView
+                    android:id="@+id/zhenduan_descScroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scrollbars="none"
+                    >
+
+                    <TextView
+                        android:id="@+id/zhenduan_descText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+
+                </ScrollView>
+
+
+                <RelativeLayout
+                    android:id="@+id/Result_Link"
+                    android:layout_width="160dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/biankuang_linear"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/jcwz"
+                        />
+
+                    <TextView
+
+                        android:id="@+id/JieGuo_ZhiLiaoText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="咳嗽怎么治"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/more_gray_man"
+
+                        />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/XQ_ImageKuang"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="16dp"
+                >
+
+                <ImageView
+
+                    android:id="@+id/Self_ImageNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/niu_woman_4x"/>
+
+                <TextView
+                    android:id="@+id/mTextNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="下一步"
+                    android:textColor="@color/colorNoClick"
+                    android:textSize="16dp"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

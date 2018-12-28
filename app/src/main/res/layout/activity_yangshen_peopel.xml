@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+    >
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/ZhenDuanText"
+                >
+
+                <ImageView
+                    android:id="@+id/Image_Back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:padding="8dp"
+                    android:src="@drawable/return_manback"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="47dp"
+                    android:layout_marginRight="47dp"
+                    android:background="@drawable/shape_but"
+                    >
+
+                    <TextView
+                        android:id="@+id/Faxian_titleSeach"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="11dp"
+                        android:drawableLeft="@drawable/faxiansousuo4x"
+                        android:drawablePadding="8dp"
+                        android:text="搜索文章"
+                        />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/sendArticle_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:padding="8dp"
+                    android:src="@drawable/write_man"
+                    />
+
+
+            </RelativeLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/mNestedScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/yangsheng_people_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/Master_radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="105dp"
+                    android:orientation="horizontal"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="120dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:drawableLeft="@drawable/remenlanmuman"
+                    android:drawablePadding="11dp"
+                    android:text="热门栏目"
+                    />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/host_lanmu_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:layout_below="@+id/text"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"/>
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/activity_user_backgroundline"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/bianjituijianman"
+                android:drawablePadding="11dp"
+                android:gravity="center"
+                android:text="编辑推荐"
+                android:textStyle="bold"
+                />
+
+            <include layout="@layout/activity_background_black_lines"/>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/tuijian_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <include layout="@layout/activity_user_backgroundline"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginLeft="16dp"
+                android:drawableLeft="@drawable/remendarenman"
+                android:drawablePadding="11dp"
+                android:gravity="center"
+                android:text="热门达人"
+                android:textStyle="bold"
+                />
+
+            <include layout="@layout/activity_background_black_lines"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/host_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:layout_marginTop="8dp"/>
+
+            <include layout="@layout/activity_user_backgroundline"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/article_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

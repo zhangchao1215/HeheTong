@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <ImageView
+                android:id="@+id/Image_Back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:padding="5dp"
+                android:src="@drawable/return_black_man"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="我的收藏"
+                android:textColor="@color/Black"
+                android:textSize="16dp"
+                />
+
+            <TextView
+                android:id="@+id/mText_compile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:text="编辑"
+                android:textColor="#66a3fd"
+
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:id="@+id/mText_article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100dp"
+                android:text="文章"
+                />
+
+            <View
+                android:id="@+id/article_lines"
+                android:layout_width="28dp"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="100dp"
+                android:background="#66a3fc"
+                />
+
+            <TextView
+                android:id="@+id/mText_commodity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="100dp"
+                android:text="商品"
+                android:textColor="#999999"
+                />
+
+            <View
+                android:id="@+id/shop_lines"
+                android:layout_width="28dp"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="100dp"
+                android:background="#66a3fc"
+                android:visibility="gone"
+                />
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/activity_user_backgroundline"/>
+
+
+        <ListView
+            android:id="@+id/article_listviwe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <ListView
+            android:id="@+id/Shop_listviwe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Article_Relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_above="@+id/mRelative"
+            android:background="#cccccc"/>
+
+
+        <RelativeLayout
+            android:id="@+id/mRelative"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            >
+
+            <TextView
+                android:id="@+id/mText_checkAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:drawableLeft="@drawable/checkbox_selector"
+                android:drawablePadding="8dp"
+                android:text="全选1"
+                />
+
+
+            <TextView
+                android:id="@+id/Article_cancelAll"
+                android:layout_width="116dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorTextYangXIn"
+                android:gravity="center"
+                android:text="取消收藏"
+                android:textColor="@color/white"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Shop_Relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#cccccc"/>
+
+
+        <RelativeLayout
+            android:id="@+id/Shop"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            >
+
+            <TextView
+                android:id="@+id/mText_Shop_checkAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:drawableLeft="@drawable/checkbox_selector"
+                android:drawablePadding="8dp"
+                android:text="全选2"
+                />
+
+
+            <TextView
+                android:id="@+id/Article_Shop_cancelAll"
+                android:layout_width="116dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorTextYangXIn"
+                android:gravity="center"
+                android:text="取消收藏"
+                android:textColor="@color/white"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

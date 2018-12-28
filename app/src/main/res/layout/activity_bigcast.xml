@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/Linear"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorTextYangXIn">
+
+        <ImageView
+            android:id="@+id/Image_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:padding="10dp"
+            android:src="@drawable/return_manback"
+
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="大医说"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            />
+
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/bigcast_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/search_image"
+            />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:orientation="vertical">
+
+
+            <include layout="@layout/activity_user_backgroundline"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="7dp"
+                android:drawableLeft="@drawable/fenlei_man"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="推荐大咖"
+                android:textColor="@color/Black"
+                />
+
+            <include layout="@layout/activity_background_black_lines"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.crazysunj.cardslideview.CardViewPager
+                    android:id="@+id/card_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:card_loop="true"
+                    />
+
+                <!--<com.example.heyikun.heheshenghuo.modle.util.ClipViewPager-->
+                <!--android:id="@+id/viewpager"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="200dp"-->
+                <!--android:layout_marginLeft="64dp"-->
+                <!--android:layout_marginRight="64dp"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:clipChildren="false"-->
+                <!--android:overScrollMode="never"/>-->
+            </RelativeLayout>
+
+            <include layout="@layout/activity_background_black_lines"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/bigcast_LookAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/jiaguanzhu_man3x"
+                    android:drawablePadding="5dp"
+                    android:text="查看所有大咖"
+                    android:textColor="@color/ZhenDuanText"
+                    />
+
+            </RelativeLayout>
+
+            <include layout="@layout/activity_user_backgroundline"/>
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/bigcast_Tab"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"/>
+
+            <!--<android.support.v4.view.ViewPager-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/Bigcast_recyeler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

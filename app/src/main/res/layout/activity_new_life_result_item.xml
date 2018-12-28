@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/quan_Linear"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@color/color_ccc"
+
+    >
+
+    <LinearLayout
+        android:layout_width="125dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/newLife_item_text"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorTextYangXIn"
+            android:text="心脏机能"
+            android:textColor="@color/white"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp">
+
+            <com.example.heyikun.heheshenghuo.modle.CircleProgressView
+                android:id="@+id/newLife_progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+
+            <TextView
+                android:id="@+id/new_life_fen_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="25"
+                android:textColor="@color/quan_xinzang"
+                android:textSize="34dp"
+                />
+
+            <ImageView
+                android:id="@+id/fenshuImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/fenshuxian_4x"
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="分"
+                android:textSize="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/new_life_result_text"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="心脏机能重度受损"
+            android:textColor="@color/shoppingText"
+
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

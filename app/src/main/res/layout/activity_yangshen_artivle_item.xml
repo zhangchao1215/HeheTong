@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/recommend_linear"
+              android:layout_width="match_parent"
+              android:layout_height="280dp"
+              android:background="@color/white"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="9dp"
+        >
+
+        <ImageView
+            android:id="@+id/yangshen_imageOne"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/touxiang_nan_man_4x"
+            />
+
+        <TextView
+            android:id="@+id/yangshen_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/yangshen_imageOne"
+
+            />
+
+        <TextView
+            android:id="@+id/yangshen_textdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/yangshen_name"
+            android:ellipsize="end"
+            android:maxLines="1"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/yangshen_imageTwo"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/yangshen_textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/yangshen_textContent"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="3"/>
+
+
+</LinearLayout>

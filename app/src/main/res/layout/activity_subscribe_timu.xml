@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <ImageView
+                android:id="@+id/Image_Back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:padding="11dp"
+                android:src="@drawable/return_black_man"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="订阅题目"
+                android:textColor="@color/Black"
+                android:textSize="16dp"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:background="@color/colorTextYangXIn">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:text="您订阅的题目："
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/textSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:text="0/6"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+
+                android:id="@+id/text_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/white"/>
+
+
+        </RelativeLayout>
+
+
+        <include layout="@layout/activity_user_backgroundline"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp">
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="题目标签"
+                android:textColor="@color/Black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text2"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="3dp"
+                android:text="请选择您喜欢的类别，系统会自动推送该类别的题目"
+                android:textColor="@color/color999"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/tishitiao_man_4x"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="16dp"
+            android:background="#e5e5e5"
+            />
+
+
+        <com.example.heyikun.heheshenghuo.modle.util.MultiLineChooseLayout
+            android:id="@+id/multiChoose"
+            style="@style/MultiChoose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:visibility="gone"
+            />
+
+        <!--<com.loction.choose.flowchooselibrary.weight.FlowChooseLayout-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:id="@+id/chooseLayout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:visibility="visible"-->
+            <!--app:backgroundColor="@color/white"-->
+            <!--app:borderColor="@color/color_ccc"-->
+            <!--app:borderWidth="1dp"-->
+            <!--app:checked_back_ground="@color/colorTextYangXIn"-->
+            <!--app:checked_text_color="@color/white"-->
+            <!--app:isMultiSelect="true"-->
+            <!--app:radius="3dp"-->
+            <!--app:rowSpacing="8dp"-->
+            <!--app:childSpacing="10dp"-->
+            <!--/>-->
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/mBut_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/huidingyue4x"
+
+        />
+
+</RelativeLayout>

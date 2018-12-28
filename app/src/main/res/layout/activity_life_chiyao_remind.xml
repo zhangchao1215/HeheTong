@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:id="@+id/Image_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:padding="5dp"
+            android:src="@drawable/return_black_man"/>
+
+        <TextView
+            android:id="@+id/mText_TitleRemind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="吃药提醒"
+            android:textColor="@color/Black"
+
+            />
+
+        <TextView
+            android:id="@+id/mText_AddReming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:text="添加"
+            android:textColor="@color/colorTextYangXIn"
+            />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/activity_user_backgroundline"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/mText_Remind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="您的吃药提醒为空，请去添加吧"
+        />
+
+    <include layout="@layout/activity_base_recyclerview"/>
+
+
+</LinearLayout>

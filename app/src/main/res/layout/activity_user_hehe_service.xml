@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/activity_include_title"/>
+
+
+    <include layout="@layout/activity_user_backgroundline"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:drawableLeft="@drawable/tishitiao_man_4x"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:text="客服联系方式"
+
+        />
+
+    <include layout="@layout/activity_background_black_lines"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginLeft="16dp">
+
+        <TextView
+            android:id="@+id/mText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="请拨打我们的客服电话"
+            android:textColor="@color/Black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mText1"
+            android:layout_marginTop="2dp"
+            android:text="400-100-2368"
+            />
+
+        <Button
+            android:id="@+id/Making_Call"
+            android:layout_width="72dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/shape_hehe_service"
+            android:text="点我拨打"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/activity_background_black_lines"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginLeft="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:text="联系官方客服QQ"
+            android:textColor="@color/Black"
+            />
+
+
+        <Button
+            android:id="@+id/Lianxi_Services_QQ"
+            android:layout_width="72dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/shape_hehe_service_two"
+            android:text="联系客服"
+            android:textColor="#66a3fd"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/activity_background_black_lines"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginLeft="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:text="在线联系客服"
+            android:textColor="@color/Black"
+            />
+
+
+        <Button
+            android:id="@+id/ZaiXian_Services"
+            android:layout_width="72dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/shape_hehe_service"
+            android:text="在线客服"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/activity_background_black_lines"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginLeft="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:text="官方客服邮箱"
+            android:textColor="@color/Black"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:text="hhsh-kf@heyishenghuo.com"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

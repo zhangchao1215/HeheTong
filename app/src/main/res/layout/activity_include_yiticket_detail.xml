@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginRight="16dp"
+        >
+
+        <TextView
+            android:id="@+id/mText_textOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="商城消费"/>
+
+        <TextView
+            android:id="@+id/mText_Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:text="2017/10/12 11:34"
+
+            />
+
+        <TextView
+            android:id="@+id/mText_Money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/mText_Time"
+            android:layout_marginTop="2dp"
+            android:text="+10"
+            android:textSize="16dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

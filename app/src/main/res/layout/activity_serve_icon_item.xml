@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<RelativeLayout-->
+
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<ImageView-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:id="@+id/serve_image_icon"-->
+            <!--android:src="@drawable/jcwz"-->
+            <!--android:layout_width="28dp"-->
+            <!--android:layout_height="28dp"-->
+          <!--/>-->
+
+        <!--<TextView-->
+            <!--android:layout_below="@+id/serve_image_icon"-->
+            <!--android:id="@+id/Serve_text_name"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="中医养生馆" />-->
+    <!--</RelativeLayout>-->
+    <RelativeLayout
+        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        >
+
+    <ImageView
+        android:id="@+id/serve_image_icon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/jcwz"
+        />
+
+    <TextView
+        android:id="@+id/Serve_text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/serve_image_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="每日优选"
+        android:textSize="12dp"
+        />
+    </RelativeLayout>
+</LinearLayout>

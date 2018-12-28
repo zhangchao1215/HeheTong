@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RadioGroup
+        android:id="@+id/bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:elevation="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/mRadio_HeheLife"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/shouye_life_selector"
+            android:gravity="center_horizontal"
+            android:text="和合生活"
+            android:textColor="@drawable/shouye_textcolor" />
+
+        <RadioButton
+            android:id="@+id/mRadio_Shangcheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/shouye_shangcheng_selector"
+            android:gravity="center_horizontal"
+            android:text="和合商城"
+            android:textColor="@drawable/shouye_textcolor" />
+
+        <RadioButton
+            android:id="@+id/mRadio_FaXian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/shouye_faxian_selector"
+            android:gravity="center_horizontal"
+            android:text="健康发现"
+            android:textColor="@drawable/shouye_textcolor" />
+
+        <RadioButton
+            android:id="@+id/mRadio_User"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/shouye_genren_selector"
+            android:gravity="center_horizontal"
+            android:text="个人中心"
+            android:textColor="@drawable/shouye_textcolor" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/bottom_linear"
+        android:layout_marginBottom="4dp"
+        android:background="#E4E4E4" />
+
+</RelativeLayout>

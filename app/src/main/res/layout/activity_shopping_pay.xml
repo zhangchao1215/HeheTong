@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+           android:id="@+id/mScrollview"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="348dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/Shopping_pay_viewP"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <RadioGroup
+                android:id="@+id/Shopping_RadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                />
+
+        </RelativeLayout>
+
+        <include layout="@layout/activity_user_backgroundline"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:layout_marginLeft="16dp">
+
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/Shopping_share_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="7dp"
+                    android:drawableTop="@drawable/shangpinfenxiang_4man"
+                    android:text="分享得易币"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/shopping_text_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_toLeftOf="@+id/relative"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="海尔多功能扫地机器人T350海尔多功能扫地机器人T350"
+                android:textSize="16dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/shopping_tizhi_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shopping_text_Name"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/relative"
+                android:orientation="horizontal"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/shopping_text_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="￥499.90+200易币"
+                android:textColor="@color/shoppingText"
+                android:textSize="18dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp">
+
+                <TextView
+                    android:id="@+id/shopping_text_oldPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="价格：1299.00"
+                    android:textColor="@color/color_ccc"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/back_03"
+                    />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:text="快递：包邮"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="已售出：3"/>
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+        <include layout="@layout/activity_user_backgroundline"/>
+
+        <RelativeLayout
+            android:id="@+id/youhui_relative"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="购买此商品赠送：28易券"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="11dp"
+                android:padding="5dp"
+                android:src="@drawable/more_grayman"
+                />
+
+        </RelativeLayout>
+
+        <include layout="@layout/activity_background_black_lines"/>
+
+
+        <RelativeLayout
+            android:id="@+id/vip_relative"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="会员等级价格"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="11dp"
+                android:padding="5dp"
+                android:src="@drawable/more_grayman"
+                />
+
+        </RelativeLayout>
+
+        <include layout="@layout/activity_background_black_lines"/>
+
+        <RelativeLayout
+            android:id="@+id/select_relative"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="选择"
+                android:textColor="@color/colorPPw"
+                android:textSize="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="48dp"
+                android:text="尺寸选择 数量选择"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="11dp"
+                android:padding="5dp"
+                android:src="@drawable/more_grayman"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

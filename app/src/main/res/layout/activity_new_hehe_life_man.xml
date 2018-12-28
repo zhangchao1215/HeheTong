@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:id="@+id/mLinear"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:focusable="true"
+			  android:focusableInTouchMode="true"
+			  android:orientation="vertical"
+		>
+
+	<com.example.heyikun.heheshenghuo.modle.util.PullDownScrollView
+			android:id="@+id/refresh_root"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:background="@color/colorTextYangXIn"
+			android:orientation="vertical"
+			>
+
+		<ScrollView
+				android:id="@+id/mScrollview"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@color/white"
+				android:scrollbars="none"
+				android:visibility="visible"
+				>
+
+			<LinearLayout
+					android:id="@+id/mScrollview_Linear"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+
+				<RelativeLayout
+						android:layout_width="match_parent"
+						android:layout_height="44dp"
+						android:background="@color/colorTextYangXIn"
+						>
+
+
+					<ImageView
+							android:id="@+id/life_shengyinImage"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_centerVertical="true"
+							android:layout_marginLeft="16dp"
+							android:padding="5dp"
+							android:src="@drawable/wylfoff4x"
+							/>
+
+					<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_centerVertical="true"
+							android:layout_marginLeft="3dp"
+							android:layout_toRightOf="@+id/life_shengyinImage"
+							android:text="五音疗法"
+							android:textColor="@color/white"
+							/>
+
+					<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_centerInParent="true"
+							android:text="和合自诊"
+							android:textColor="@color/white"
+							android:textSize="16dp"
+							/>
+
+
+					<ImageView
+							android:id="@+id/Life_UserImage"
+							android:layout_width="24dp"
+							android:layout_height="24dp"
+							android:layout_alignParentRight="true"
+							android:layout_centerVertical="true"
+							android:layout_marginRight="16dp"
+							android:scaleType="centerCrop"
+							android:src="@drawable/touxiang_nan_man_4x"
+
+							/>
+
+
+					<TextView
+							android:id="@+id/Life_UserName"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_centerVertical="true"
+							android:layout_marginRight="8dp"
+							android:layout_toLeftOf="@+id/Life_UserImage"
+							android:text="注册登录"
+							android:textColor="@color/white"
+							/>
+
+				</RelativeLayout>
+
+				<RelativeLayout
+						android:layout_width="match_parent"
+						android:layout_height="360dp"
+
+						>
+
+					<ImageView
+							android:id="@+id/Man_AnimatorImage"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/new_image_huo"
+							android:layout_centerHorizontal="true"
+							android:layout_marginTop="15dp"
+							android:src="@drawable/saomiao_4man"
+							/>
+
+
+					<ImageView
+
+							android:id="@+id/Man_LeftImage"
+							android:layout_width="wrap_content"
+							android:layout_height="230dp"
+							android:layout_centerInParent="true"
+							/>
+
+					<Button
+							android:id="@+id/JingMai_mBut"
+							android:layout_width="136dp"
+							android:layout_height="30dp"
+							android:layout_alignParentBottom="true"
+							android:layout_centerHorizontal="true"
+							android:layout_marginBottom="10dp"
+							android:background="@drawable/jingluo_niu_4x"
+							android:text="经脉"
+							android:textColor="@color/colorTextYangXIn"/>
+
+
+					<ImageView
+							android:id="@+id/new_image_huo"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_centerHorizontal="true"
+							android:layout_marginTop="15dp"
+							android:src="@drawable/huo_4x"
+							/>
+
+					<RelativeLayout
+							android:id="@+id/relative1"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="115dp"
+							>
+
+						<ImageView
+								android:id="@+id/new_image_mu"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="35dp"
+								android:src="@drawable/mu_4x"/>
+
+						<ImageView
+								android:id="@+id/new_image_tu"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_alignParentRight="true"
+								android:layout_marginRight="35dp"
+								android:src="@drawable/tu_4x"
+								/>
+
+
+					</RelativeLayout>
+
+					<RelativeLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/relative1"
+							android:layout_marginTop="105dp"
+
+							>
+
+						<ImageView
+								android:id="@+id/new_image_shui"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="90dp"
+								android:src="@drawable/shui_4x"
+								/>
+
+						<ImageView
+								android:id="@+id/new_image_jin"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_alignParentRight="true"
+								android:layout_marginRight="90dp"
+								android:src="@drawable/jin_4x"
+								/>
+
+					</RelativeLayout>
+
+				</RelativeLayout>
+
+
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+					<RelativeLayout
+							android:id="@+id/new_life_wuxing_relative"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:background="@drawable/wuxing_tizhi_4x">
+
+						<TextView
+								android:id="@+id/New_Life_wuxing_text"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_centerHorizontal="true"
+								android:layout_marginTop="55dp"
+								android:text="五行体质"
+								android:maxLines="1"
+								android:maxLength="10"
+								/>
+
+					</RelativeLayout>
+
+					<RelativeLayout
+							android:id="@+id/New_Life_nine_Relative"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:background="@drawable/ninetizhi_4x">
+
+						<TextView
+								android:id="@+id/New_Life_nine_text"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_centerHorizontal="true"
+								android:layout_marginTop="55dp"
+								android:text="九种体质"
+								/>
+
+					</RelativeLayout>
+
+				</LinearLayout>
+
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+					<RelativeLayout
+							android:id="@+id/bianzheng_relative"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:background="@drawable/bianzheng_4x">
+
+						<TextView
+								android:id="@+id/New_Life_bianzheng_text"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_centerHorizontal="true"
+								android:layout_marginTop="55dp"
+								android:text="辩证论养"
+								/>
+
+					</RelativeLayout>
+
+					<RelativeLayout
+							android:id="@+id/New_life_more_relative"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:background="@drawable/ceping_more_4x">
+
+						<TextView
+								android:id="@+id/New_cepinMore_text"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_centerHorizontal="true"
+								android:layout_marginTop="55dp"
+								android:text="更多测评"
+								/>
+
+					</RelativeLayout>
+
+				</LinearLayout>
+
+
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+					<RelativeLayout
+							android:id="@+id/new_huo_relative"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:background="@drawable/click_biaoqian_4x"
+							>
+
+						<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_centerInParent="true"
+								android:drawableLeft="@drawable/huoxing_4x"
+								android:gravity="center"
+								android:text="火行"
+								android:textColor="@color/white"
+								/>
+					</RelativeLayout>
+
+					<RelativeLayout
+							android:id="@+id/new_tu_relative"
+
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:background="@drawable/no_click_biaoqian_4x"
+							>
+
+						<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_centerInParent="true"
+								android:drawableLeft="@drawable/tuxing_4x"
+								android:gravity="center"
+								android:text="土行"
+								android:textColor="@color/white"
+								/>
+					</RelativeLayout>
+
+					<RelativeLayout
+							android:id="@+id/new_mu_relative"
+
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:background="@drawable/no_click_biaoqian_4x"
+							>
+
+						<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_centerInParent="true"
+								android:drawableLeft="@drawable/muxing_4x"
+								android:gravity="center"
+								android:text="木行"
+								android:textColor="@color/white"
+								/>
+					</RelativeLayout>
+
+					<RelativeLayout
+							android:id="@+id/new_shui_relative"
+
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:background="@drawable/no_click_biaoqian_4x"
+							>
+
+						<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_centerInParent="true"
+								android:drawableLeft="@drawable/shuixing_4x"
+								android:gravity="center"
+								android:text="水行"
+								android:textColor="@color/white"
+								/>
+					</RelativeLayout>
+
+					<RelativeLayout
+							android:id="@+id/new_jin_relative"
+
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:background="@drawable/no_click_biaoqian_4x"
+							>
+
+						<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_centerInParent="true"
+								android:drawableLeft="@drawable/jinxing_4x"
+								android:gravity="center"
+								android:text="金行"
+								android:textColor="@color/white"
+								/>
+					</RelativeLayout>
+
+				</LinearLayout>
+
+				<!--<include layout="@layout/activity_new_life_result"/>-->
+
+				<android.support.v7.widget.RecyclerView
+						android:id="@+id/new_Life_recycler"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"/>
+
+				<include layout="@layout/activity_user_backgroundline"/>
+			</LinearLayout>
+		</ScrollView>
+	</com.example.heyikun.heheshenghuo.modle.util.PullDownScrollView>
+
+
+</LinearLayout>

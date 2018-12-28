@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				xmlns:app="http://schemas.android.com/apk/res-auto"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@color/white"
+				android:orientation="vertical"
+		>
+
+	<include
+			android:id="@+id/loding"
+			layout="@layout/activity_loding_fragment"
+			android:visibility="visible"
+			/>
+
+	<RelativeLayout
+			android:id="@+id/Title_Relative"
+			android:layout_width="match_parent"
+			android:layout_height="44dp"
+			android:background="@color/colorTextYangXIn">
+
+		<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="30dp"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="16dp"
+				android:layout_marginRight="16dp"
+				android:background="@drawable/shape_but"
+				android:gravity="center"
+				>
+
+			<TextView
+					android:id="@+id/Faxian_TitleCishi"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:drawableLeft="@drawable/faxiansousuo4x"
+					android:drawablePadding="8dp"
+					android:text="搜索文章"
+					/>
+
+		</RelativeLayout>
+
+
+	</RelativeLayout>
+
+
+	<android.support.v4.widget.NestedScrollView
+			android:id="@+id/mScrollview"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@+id/Title_Relative"
+			android:visibility="gone">
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+
+			<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+				<com.youth.banner.Banner
+						android:id="@+id/mViewPager"
+						android:layout_width="match_parent"
+						android:layout_height="120dp"
+						app:indicator_height="6dp"
+						app:indicator_margin="5dp"
+						app:indicator_width="6dp"
+						/>
+
+				<RadioGroup
+						android:id="@+id/Faxian_RadioGroup"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerHorizontal="true"
+						android:layout_marginTop="110dp"
+						android:orientation="horizontal"
+						/>
+
+			</RelativeLayout>
+
+			<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+				<TextView
+						android:id="@+id/Day_ke"
+						android:layout_width="wrap_content"
+						android:layout_height="30dp"
+						android:layout_marginLeft="16dp"
+						android:drawablePadding="8dp"
+						android:gravity="center_vertical"
+						android:text="和合头条"
+						android:textColor="#BE172D"
+						android:textSize="14dp"
+						android:textStyle="bold"
+						/>
+
+				<com.example.heyikun.heheshenghuo.modle.util.MarqueeView
+						android:id="@+id/marqueeview"
+						android:layout_width="200dp"
+						android:layout_height="16dp"
+						android:layout_centerVertical="true"
+						android:layout_marginLeft="10dp"
+						android:layout_toRightOf="@id/Day_ke"
+						app:mvAnimDuration="1000"
+						app:mvInterval="3000"
+						app:mvSingleLine="true"
+						android:textSize="14dp"
+						>
+				</com.example.heyikun.heheshenghuo.modle.util.MarqueeView>
+			</RelativeLayout>
+
+
+			<ImageView
+					android:id="@+id/mImage_plan"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:src="@drawable/health_plan"
+					/>
+
+			<LinearLayout
+					android:id="@+id/LinearAdd_consults"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dp"
+					android:orientation="vertical"
+					/>
+
+			<include layout="@layout/activity_user_backgroundline"/>
+
+			<TextView
+					android:id="@+id/faxian_lookAll_zixun"
+					android:layout_width="wrap_content"
+					android:layout_height="44dp"
+					android:layout_gravity="center"
+					android:drawableLeft="@drawable/jiaguanzhu_man3x"
+					android:drawablePadding="8dp"
+					android:gravity="center"
+					android:text="查看全部咨讯"
+					android:textColor="@color/colorTextYangXIn"
+					android:visibility="gone"
+					/>
+
+			<android.support.v7.widget.RecyclerView
+					android:id="@+id/faxian_recycler_guanggao"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"/>
+
+			<include layout="@layout/activity_user_backgroundline"/>
+
+			<android.support.v7.widget.RecyclerView
+					android:id="@+id/Faxian_articleRecycler"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_marginTop="10dp"
+
+					/>
+
+		</LinearLayout>
+
+
+	</android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

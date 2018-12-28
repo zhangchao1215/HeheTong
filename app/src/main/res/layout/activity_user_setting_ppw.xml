@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/User_ppw_Linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="264dp"
+        android:layout_height="222dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_relative"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="修改个人简介"
+            android:textColor="@color/Black"
+            android:textSize="20dp"
+
+            />
+
+        <EditText
+            android:id="@+id/User_ppw_Name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_user_setting_edit"
+            android:hint="  请输入新的昵称"
+            />
+
+        <EditText
+            android:id="@+id/User_ppw_JianJie"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/shape_user_setting_edit"
+            android:hint="  请输入新的简介"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/User_ppw_IdontText"
+                android:layout_width="107dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittext_kuang"
+                android:gravity="center"
+                android:text="我不改了"
+                android:textColor="#9C9C9C"
+                />
+
+            <TextView
+                android:id="@+id/User_ppw_YesText"
+                android:layout_width="107dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorTextYangXIn"
+                android:gravity="center"
+                android:text="确定修改"
+                android:textColor="@color/white"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

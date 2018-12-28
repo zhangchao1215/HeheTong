@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_include_title" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:id="@+id/mText_ticket_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="易券余额" />
+
+        <TextView
+            android:id="@+id/mText_GetYi_ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:drawablePadding="4dp"
+            android:drawableRight="@drawable/gengduo_man"
+            android:text="如何赚取易券"
+            android:textColor="@color/colorTextYangXIn" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        android:text="2660"
+        android:textColor="@color/Black"
+        android:textSize="50dp" />
+
+
+    <include layout="@layout/activity_user_backgroundline" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:id="@+id/mText_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/tishitiao_man_4x"
+            android:drawablePadding="12dp"
+            android:text="易券记录" />
+
+        <TextView
+            android:id="@+id/mText_Detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:drawablePadding="12dp"
+            android:drawableRight="@drawable/gengduo_man"
+            android:text="查看详情"
+            android:textColor="@color/colorTextYangXIn"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginRight="16dp"
+
+        >
+
+        <TextView
+            android:id="@+id/mText_textOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="商城消费" />
+
+        <TextView
+            android:id="@+id/mText_Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:text="2017/10/12 11:34"
+
+            />
+
+        <TextView
+            android:id="@+id/mText_Money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/mText_Time"
+            android:layout_marginTop="2dp"
+            android:text="+10"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/Yiticket_ListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

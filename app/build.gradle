@@ -1,0 +1,116 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+android {
+    signingConfigs {
+        config {
+            keyAlias 'heheshenghuo'
+            keyPassword '123456'
+            storeFile file('D:/heh/heheshenghuo.jks')
+            storePassword '123456'
+        }
+    }
+
+    compileSdkVersion 25
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId 'com.heyikun.hehe'
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 32
+        versionName "2.0.5"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        signingConfig signingConfigs.config
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "1cd8a8fe6341c11c32f38f18", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+        sit {
+            debuggable true
+            minifyEnabled false
+        }
+    }
+
+//    sourceSets {
+//        main {
+//            jniLibs.srcDirs = ['libs']
+//        }
+//    }
+    greendao {
+        schemaVersion 1
+        daoPackage 'com.example.heyikun.heheshenghuo.greendao'
+        targetGenDir 'src/main/java/'
+    }
+    productFlavors {
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.google.code.gson:gson:2.8.1'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'com.squareup.okio:okio:1.11.0'
+    compile 'com.android.support:design:25.2.0'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'co.lujun:androidtagview:1.0.3'
+    compile 'com.android.support:recyclerview-v7:25.0.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    compile 'org.greenrobot:greendao:3.2.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.google.android:flexbox:0.2.5'
+    compile 'com.contrarywind:Android-PickerView:3.2.4'
+    compile files('libs/alipaySdk-20170725.jar')
+    compile project(':myokhttp')
+    compile 'com.yanzhenjie:permission:1.0.6'
+    compile project(':cardslideview')
+    compile files('libs/jcore-android-1.1.8.jar')
+    compile 'cn.jiguang.sdk:jpush:3.0.9'
+    // 此处以JPush 3.0.9 版本为例。
+    compile 'cn.jiguang.sdk:jcore:1.1.7'
+    // 此处以JCore 1.1.7 版本为例。
+    compile 'com.just.agentweb:agentweb:1.0.3'
+    compile project(':imagepicker')
+    compile 'com.youth.banner:banner:1.1.5'
+    compile project(':flowlayout-lib')
+    compile project(':flowchooselibrary')
+    compile files('libs/open_sdk_r6019_lite.jar')
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.12'
+}

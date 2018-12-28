@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/TiZhi_Scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/tishitiao_man_4x"
+                android:drawablePadding="16dp"
+                android:gravity="center_vertical"
+                android:text="您的体质类型" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp">
+
+                <RelativeLayout
+                    android:id="@+id/TiZhi_QiyuText"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/csjl_k_man_4x" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:drawablePadding="50dp"
+                        android:drawableRight="@drawable/csjl_jt_man_4x"
+                        android:text="气郁质"
+                        android:textColor="#66a3fd" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/TiZhi_ShiReText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/csjl_k_man_4x" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:drawablePadding="50dp"
+                        android:drawableRight="@drawable/csjl_jt_man_4x"
+                        android:text="湿热质"
+                        android:textColor="#66a3fd" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="16dp">
+
+                <RelativeLayout
+                    android:id="@+id/TiZhi_YangXuText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/csjl_k_man_4x" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:drawablePadding="50dp"
+                        android:drawableRight="@drawable/csjl_jt_man_4x"
+                        android:text="阳虚质"
+                        android:textColor="#66a3fd" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/TiZhi_XueyuText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/csjl_k_man_4x" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:drawablePadding="50dp"
+                        android:drawableRight="@drawable/csjl_jt_man_4x"
+                        android:text="血瘀质"
+                        android:textColor="#66a3fd" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:text="体质详解文案内容体质详解文案内容体质详解文案内容
+体质详解文案内容体质详解文案内容体质详解文案内容
+体质详解文案内容体质详解文案内容体质详解文案内容
+体质详解文案内容体质详解文案内容体质详解文案内容"
+
+                />
+
+            <include layout="@layout/activity_user_backgroundline" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/tishitiao_man_4x"
+                android:drawablePadding="16dp"
+                android:gravity="center_vertical"
+                android:text="怎样调理" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginLeft="12dp"
+                android:text="调理说明调理说明调理说明调理说明调理说明调理说明
+调理说明调理说明调理说明调理说明调理说明调理说明
+调理说明调理说明调理说明调理说明调理说明调理说明
+调理说明调理说明调理说明调理说明调理说明调理说明
+调理说明调理说明调理说明调理说明调理说明调理说明
+调理说明调理说明调理说明调理说明调理说明调理说明
+调理说明调理说明调理说明调理说明调理说明调理说明" />
+
+
+            <include layout="@layout/activity_user_backgroundline" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/tishitiao_man_4x"
+                android:drawablePadding="16dp"
+                android:gravity="center_vertical"
+                android:text="更多测试" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="测试题目123" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="完成即可获得 50易币奖励" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="测试题目123" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="完成即可获得 50易币奖励" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="测试题目123" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="完成即可获得 50易币奖励" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="测试题目123" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="完成即可获得 50易币奖励" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="查看测试记录"
+        android:textColor="@color/colorTextYangXIn" />
+
+</RelativeLayout>

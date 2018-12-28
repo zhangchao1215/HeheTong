@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/Linear"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@color/color_ccc"
+              android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="0.1dp"
+        android:background="@color/white"
+        >
+
+
+        <ImageView
+            android:id="@+id/life_new_image"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/jcwz"
+            />
+
+        <TextView
+            android:id="@+id/life_new_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/life_new_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="亚健康值"
+            />
+
+
+    </RelativeLayout>
+</LinearLayout>

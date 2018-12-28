@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/MiBao_ppw_TitleLinear"
+    >
+
+    <include layout="@layout/activity_user_backgroundline" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+
+        <TextView
+            android:id="@+id/mTitle_Text"
+            android:drawablePadding="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="请您填写真实信息，方便以后找回"
+            android:drawableLeft="@drawable/tishitiao_man_4x"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/MiMao_question_One"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:id="@+id/MiBao_questionTextOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="问题一"
+            android:textColor="@color/Black" />
+
+        <TextView
+            android:id="@+id/MiBao_mTextSelectorOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:text="请选择" />
+
+
+    </RelativeLayout>
+
+    <EditText
+
+        android:id="@+id/MiBao_answerOne_edit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="16dp"
+        android:background="@null"
+        android:hint="请输入答案"
+        android:maxLength="10" />
+
+    <include layout="@layout/activity_user_backgroundline" />
+
+    <RelativeLayout
+        android:id="@+id/MiMao_question_Two"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:id="@+id/MiBao_questionTextTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="问题二"
+            android:textColor="@color/Black" />
+
+        <TextView
+            android:id="@+id/MiBao_mTextSelectorTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:text="请选择" />
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/MiBao_answerTwo_edit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="16dp"
+        android:background="@null"
+        android:hint="请输入答案"
+        android:maxLength="10"
+
+        />
+
+    <include layout="@layout/activity_user_backgroundline" />
+
+    <RelativeLayout
+        android:id="@+id/MiMao_question_Three"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:id="@+id/MiBao_questionTextThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="问题三"
+            android:textColor="@color/Black" />
+
+        <TextView
+            android:id="@+id/MiBao_mTextSelectorThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:text="请选择" />
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/MiBao_answerThree_edit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="16dp"
+        android:background="@null"
+        android:hint="请输入答案"
+        android:maxLength="10"
+
+        />
+
+
+    <Button
+        android:id="@+id/MiBao_mButSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/next_but"
+        android:text="提交"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

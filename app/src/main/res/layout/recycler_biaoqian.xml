@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/man_right"
+
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="160dp"
+        android:layout_height="270dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"/>
+
+    <!--在代码中动态添加-->
+
+    <!--<ScrollView-->
+    <!--android:layout_width="160dp"-->
+    <!--android:layout_height="270dp"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_marginTop="40dp">-->
+
+    <!--<RadioGroup-->
+    <!--android:id="@+id/Dongtai_RG"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_marginTop="40dp"-->
+    <!--android:orientation="vertical">-->
+
+
+    <!--</RadioGroup>-->
+    <!--</ScrollView>-->
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/FlexBox"
+        android:layout_width="160dp"
+        android:layout_height="270dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        app:flexWrap="wrap">
+
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+</RelativeLayout>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/activity_include_title"/>
+
+
+    <include layout="@layout/activity_user_backgroundline"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:drawableLeft="@drawable/tishitiao_man_4x"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:text="如何赚取易券"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐新用户注册"
+                android:textColor="@color/Black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="每推荐一位用户成功注册,即可获得50易券"
+                android:textSize="12dp"
+                />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/mBut_recommend"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@color/colorTextYangXIn"
+            android:text="去推荐"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_marginLeft="16dp">
+
+        <LinearLayout
+            android:layout_marginRight="121dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="签到的易券"
+                android:textColor="@color/Black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="每推荐一位用户成功注册，即可获得50易券首日签到获得10易券，第二日获得11易券，第三日获得12易券...以此类推，最高50封顶"
+                android:textSize="12dp"
+                />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/mBut_qianDao"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@color/colorTextYangXIn"
+            android:text="去签到"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:layout_marginLeft="16dp">
+
+        <LinearLayout
+            android:layout_marginRight="121dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认收货得易券"
+                android:textColor="@color/Black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="在我的订单中进行收货确认操作即可获得该笔订单消费时获得的易券数。例：购买商品话费￥200+50易券，则确认收货后系统会自动发放50易券至您的易券账户"
+                android:textSize="12dp"
+                />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/mBut_shouHuo"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@color/colorTextYangXIn"
+            android:text="去收货"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="16dp">
+
+        <LinearLayout
+            android:layout_marginRight="121dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="晒单得易券"
+                android:textColor="@color/Black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="在我的订单中进行好评并上传3张以上图片，客服审核后即可获得100易券"
+                android:textSize="12dp"
+                />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/mBut_ShaiDan"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@color/colorTextYangXIn"
+            android:text="去晒单"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginLeft="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="进行体质检测"
+                android:textColor="@color/Black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="首次完成健康测试答题可得100易券"
+                android:textSize="12dp"
+                />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/mBut_detection"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@color/colorTextYangXIn"
+            android:text="去检测"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginLeft="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="121dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="读内容得易券"
+                android:textColor="@color/Black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="浏览单篇文章时间满20秒获得10易券，重
+复阅读同一篇文章只计一次"
+                android:textSize="12dp"
+                />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/mBut_read"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@color/colorTextYangXIn"
+            android:text="去阅读"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

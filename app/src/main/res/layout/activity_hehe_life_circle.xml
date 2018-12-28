@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  android:id="@+id/mLinear"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:orientation="vertical">
+
+	<RelativeLayout
+			android:id="@+id/mRelative_title"
+			android:layout_width="match_parent"
+			android:layout_height="44dp"
+
+			>
+
+
+		<ImageView
+				android:id="@+id/life_shengyinImage"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="16dp"
+				android:padding="5dp"
+				android:src="@drawable/wylfoff4x"
+				/>
+
+		<TextView
+				android:textSize="@dimen/dp_14"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="3dp"
+				android:layout_toRightOf="@+id/life_shengyinImage"
+				android:text="五音疗法"
+				android:textColor="@color/white"
+				/>
+
+		<TextView
+
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:text="智能问诊"
+				android:textColor="@color/white"
+				android:textSize="16dp"
+				/>
+
+
+		<ImageView
+				android:id="@+id/Life_UserImage"
+				android:layout_width="24dp"
+				android:layout_height="24dp"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="16dp"
+				android:scaleType="centerCrop"
+				android:src="@drawable/touxiang_nan_man_4x"
+
+				/>
+
+
+		<TextView
+				android:id="@+id/Life_UserName"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="8dp"
+				android:layout_toLeftOf="@+id/Life_UserImage"
+				android:text="注册登录"
+				android:textColor="@color/white"
+				android:textSize="@dimen/dp_14"
+				/>
+
+	</RelativeLayout>
+
+	<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+		<LinearLayout
+				android:id="@+id/mLinear_backColor"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="#73AAE6"
+				android:orientation="vertical"
+				>
+
+
+			<RelativeLayout
+					android:id="@+id/mRelative_circle"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+				<com.example.heyikun.heheshenghuo.modle.util.CircleView
+						android:id="@+id/mCircleView"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="-35dp"
+						android:padding="5dp"
+						app:arcColor="#22EA8C"
+						app:arcWidth="3dp"
+						app:contentWidth="15dp"
+						app:criceOffset="8dp"
+						app:lineOffset="5dp"
+						app:lineWith="1dp"
+						app:pointSize="10dp"
+						app:textCircleColor="@color/white"
+						app:textCircleSize="12dp"
+						app:textOffset="5dp"
+						app:themeColor="@color/white"
+						app:vacanyOffset="40dp"
+						/>
+				<!--app:timeClickColor="#88C6FF"-->
+
+
+				<pl.droidsonroids.gif.GifImageView
+						android:id="@+id/mImage_gif"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerHorizontal="true"
+						android:src="@drawable/shoutaiyangxiaochangjing_man"
+						/>
+
+
+			</RelativeLayout>
+
+
+			<TextView
+					android:id="@+id/mText_jingluo"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true"
+					android:layout_gravity="center_horizontal"
+					android:gravity="center"
+					android:text="手太阴经"
+					android:textColor="@color/white"
+					android:textSize="14dp"
+					/>
+			<!--这个是云彩图片-->
+
+			<ImageView
+					android:id="@+id/mImage_yuncai"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					android:background="@drawable/yuncai"
+					/>
+
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/dp_275"
+					android:background="@color/white"
+					android:orientation="horizontal"
+					android:weightSum="7"
+					>
+
+				<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_marginLeft="@dimen/dp_16"
+						android:layout_marginRight="@dimen/dp_8"
+						android:layout_marginTop="@dimen/dp_16"
+						android:layout_weight="2"
+						android:orientation="vertical"
+						>
+
+					<android.support.v7.widget.CardView
+							android:layout_width="@dimen/dp_100"
+							android:layout_height="@dimen/dp_110"
+							android:layout_gravity="center_horizontal"
+							app:cardBackgroundColor="@color/white"
+							app:cardCornerRadius="5dp">
+
+
+						<LinearLayout
+								android:layout_width="@dimen/dp_100"
+								android:layout_height="@dimen/dp_110"
+								android:orientation="vertical"
+								>
+
+
+							<TextView
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:layout_marginTop="10dp"
+									android:gravity="center"
+									android:maxLines="1"
+									android:text="——基本数据——"
+									android:textColor="@color/black"
+									android:textSize="12dp"
+
+
+									/>
+
+							<ImageView
+									android:id="@+id/mImage_people"
+									android:layout_width="40dp"
+									android:layout_height="40dp"
+									android:layout_gravity="center"
+									android:layout_marginTop="@dimen/dp_8"
+									android:src="@drawable/people_image"
+									/>
+
+							<TextView
+									android:id="@+id/mText_peopleStatus"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:layout_marginTop="@dimen/dp_8"
+									android:gravity="center"
+									android:text=""
+									android:textSize="12dp"
+									/>
+						</LinearLayout>
+
+
+					</android.support.v7.widget.CardView>
+
+					<android.support.v7.widget.CardView
+							android:layout_width="@dimen/dp_100"
+							android:layout_height="@dimen/dp_110"
+							android:layout_gravity="center_horizontal"
+							android:layout_marginTop="@dimen/dp_16"
+							app:cardBackgroundColor="@color/white"
+							app:cardCornerRadius="5dp">
+
+
+						<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:orientation="vertical"
+								>
+
+
+							<TextView
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:layout_marginTop="10dp"
+									android:gravity="center"
+									android:maxLines="1"
+									android:text="——手部特写——"
+									android:textColor="@color/black"
+									android:textSize="12dp"
+
+
+									/>
+
+							<ImageView
+									android:id="@+id/mImage_hand"
+									android:layout_width="40dp"
+									android:layout_height="40dp"
+									android:layout_gravity="center"
+									android:layout_marginTop="@dimen/dp_8"
+									android:src="@drawable/hand_image"
+									/>
+
+							<TextView
+									android:id="@+id/mText_handStatus"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:layout_marginTop="@dimen/dp_8"
+									android:gravity="center"
+									android:text="未上传"
+									android:textSize="12dp"
+									/>
+						</LinearLayout>
+
+					</android.support.v7.widget.CardView>
+
+
+				</LinearLayout>
+
+
+				<android.support.v7.widget.CardView
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_marginBottom="@dimen/dp_24"
+						android:layout_marginTop="@dimen/dp_16"
+						android:layout_weight="3"
+						app:cardBackgroundColor="@color/white"
+						app:cardCornerRadius="5dp"
+						>
+
+					<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_marginTop="10dp"
+							android:orientation="vertical"
+							>
+
+						<TextView
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:gravity="center"
+								android:text="—— 中医五行 ——"
+								android:textSize="12dp"
+								android:textColor="@color/black"/>
+
+						<ImageView
+								android:id="@+id/mImage_taiji"
+								android:layout_width="90dp"
+								android:layout_height="90dp"
+								android:layout_gravity="center"
+								android:layout_marginTop="16dp"
+								android:src="@drawable/taiji_image"
+								/>
+
+						<TextView
+								android:id="@+id/mText_xuxing_result"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_margin="@dimen/dp_16"
+								android:text="待评测"
+								android:textSize="@dimen/dp_12"
+
+								/>
+
+
+					</LinearLayout>
+
+
+				</android.support.v7.widget.CardView>
+
+				<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_marginLeft="8dp"
+						android:layout_marginRight="8dp"
+						android:layout_marginTop="16dp"
+						android:layout_weight="2"
+						android:orientation="vertical"
+						>
+
+					<android.support.v7.widget.CardView
+							android:layout_width="@dimen/dp_100"
+							android:layout_height="@dimen/dp_110"
+							android:layout_gravity="center_horizontal"
+							app:cardBackgroundColor="@color/white"
+
+							app:cardCornerRadius="5dp">
+
+
+						<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:orientation="vertical"
+								>
+
+
+							<TextView
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:layout_marginTop="10dp"
+									android:gravity="center"
+									android:maxLines="1"
+									android:text="——面部特征——"
+									android:textColor="@color/black"
+									android:textSize="12dp"
+
+
+									/>
+
+							<ImageView
+									android:id="@+id/mImage_head"
+									android:layout_width="40dp"
+									android:layout_height="40dp"
+									android:layout_gravity="center"
+									android:layout_marginTop="@dimen/dp_8"
+									android:src="@drawable/head_image"
+									/>
+
+							<TextView
+									android:id="@+id/mText_headStatus"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:layout_marginTop="@dimen/dp_8"
+									android:gravity="center"
+									android:textSize="12dp"
+									android:text="未上传"
+									/>
+						</LinearLayout>
+
+					</android.support.v7.widget.CardView>
+
+					<android.support.v7.widget.CardView
+							android:layout_width="@dimen/dp_100"
+							android:layout_height="@dimen/dp_110"
+							android:layout_gravity="center_horizontal"
+							android:layout_marginTop="@dimen/dp_16"
+							app:cardBackgroundColor="@color/white"
+
+							app:cardCornerRadius="5dp">
+
+
+						<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:orientation="vertical"
+								>
+
+
+							<TextView
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:layout_marginTop="10dp"
+									android:gravity="center"
+									android:maxLines="1"
+									android:text="——舌苔表象——"
+									android:textColor="@color/black"
+									android:textSize="12dp"
+
+
+									/>
+
+							<ImageView
+									android:id="@+id/mImage_shetai"
+									android:layout_width="40dp"
+									android:layout_height="40dp"
+									android:layout_gravity="center"
+									android:layout_marginTop="@dimen/dp_8"
+
+									android:src="@drawable/shetai_image"
+									/>
+
+							<TextView
+									android:id="@+id/mText_shetaiStatus"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:layout_marginTop="@dimen/dp_8"
+									android:gravity="center"
+									android:text="未上传"
+									android:textSize="12dp"
+									/>
+						</LinearLayout>
+
+					</android.support.v7.widget.CardView>
+
+
+				</LinearLayout>
+
+
+			</LinearLayout>
+
+
+			<View
+					android:layout_width="match_parent"
+					android:layout_height="16dp"
+					android:background="@color/fenggeLines"
+					/>
+
+			<android.support.design.widget.TabLayout
+					android:id="@+id/mTabLayout"
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:background="@color/white"
+					/>
+
+			<com.example.heyikun.heheshenghuo.modle.util.CustomViewPager
+					android:id="@+id/mViewPager"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="@color/white"/>
+
+		</LinearLayout>
+
+
+	</ScrollView>
+
+
+</LinearLayout>

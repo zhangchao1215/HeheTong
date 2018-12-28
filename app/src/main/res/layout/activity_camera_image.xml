@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="#80000000"
+				android:orientation="vertical">
+
+	<RelativeLayout
+
+			android:id="@+id/title"
+			android:layout_width="match_parent"
+			android:layout_height="45dp"
+			>
+
+		<TextView
+				android:id="@+id/mTextAgain"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="8dp"
+				android:padding="8dp"
+				android:text="重新上传"
+				android:textColor="@color/white"
+				/>
+
+		<TextView
+				android:id="@+id/mTextCommit"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="8dp"
+				android:padding="8dp"
+				android:text="确定"
+				android:textColor="@color/white"
+				/>
+
+	</RelativeLayout>
+
+	<ImageView
+			android:id="@+id/mImage"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@+id/title"
+			android:layout_gravity="center"
+			android:layout_marginBottom="@dimen/dp_48"
+			android:layout_marginTop="@dimen/dp_16"
+			/>
+</RelativeLayout>

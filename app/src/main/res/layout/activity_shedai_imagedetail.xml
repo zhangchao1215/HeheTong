@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/Detail_SheTai_TitleRelative"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#333333">
+
+        <ImageView
+            android:id="@+id/Detail_SheTai_ImageDetail_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/return_manback"/>
+
+        <TextView
+            android:id="@+id/Detail_SheTai_mText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="5 / 8"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/Detail_SheTai_ViewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Detail_SheTai_TitleRelative"
+        android:background="#D8D8D8"
+
+        />
+
+    <TextView
+        android:id="@+id/Detail_HuaDong_Text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#333333"
+        android:gravity="center"
+        android:text="左右滑动查看更多图片"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>

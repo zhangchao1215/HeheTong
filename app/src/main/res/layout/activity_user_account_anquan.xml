@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:id="@+id/Image_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/return_black_man"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="账号安全"
+            android:textColor="@color/Black"
+            android:textSize="16dp"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/activity_user_backgroundline"/>
+
+    <RelativeLayout
+        android:id="@+id/User_Account_Message"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/tishitiao_man_4x"
+            android:drawablePadding="12dp"
+            android:text="账号信息"/>
+    </RelativeLayout>
+
+    <include layout="@layout/activity_background_black_lines"/>
+
+    <RelativeLayout
+        android:id="@+id/User_ChangePwd"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="修改密码"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/more_black_man"/>
+    </RelativeLayout>
+
+    <include layout="@layout/activity_background_black_lines"/>
+
+    <RelativeLayout
+
+        android:id="@+id/Apay_Pwd"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="支付密码"
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/more_black_man"/>
+
+        <TextView
+            android:id="@+id/pass_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:text="未设置"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/activity_background_black_lines"/>
+
+    <RelativeLayout
+        android:id="@+id/User_MiBaoMessage"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="密保信息"/>
+
+        <TextView
+            android:id="@+id/mText_MiBao_Noset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/more_black_man"
+            android:text="未设置"/>
+    </RelativeLayout>
+
+    <include layout="@layout/activity_user_backgroundline"/>
+
+
+    <RelativeLayout
+        android:id="@+id/User_Account_BangDing"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/tishitiao_man_4x"
+            android:drawablePadding="12dp"
+            android:text="账号绑定"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/activity_background_black_lines"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/User_Change_PhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="更换手机号"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/user_Phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/User_Change_PhoneNumber"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text=""/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/noshouji4x"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/User_BangDing_Mailbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="绑定邮箱"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/User_Click_BangDing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/User_BangDing_Mailbox"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="点击绑定"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/noyouxiang4x"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!--<include layout="@layout/activity_user_backgroundline"/>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="44dp">-->
+
+    <!--<View-->
+    <!--android:layout_width="3dp"-->
+    <!--android:layout_height="15dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:background="@color/colorTextYangXIn"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:text="账号关联"/>-->
+
+
+    <!--</RelativeLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="64dp">-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_weight="1">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/User_GuanLian_WeiBo"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:text="关联微博账号"-->
+    <!--android:textSize="16dp"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/User_Click_GuanLianWeibo"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/User_GuanLian_WeiBo"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:text="点击关联"-->
+
+    <!--/>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginRight="15dp"-->
+    <!--android:src="@drawable/noweibo4x"/>-->
+    <!--</RelativeLayout>-->
+
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_weight="1">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/User_JieChu_Weixin"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:text="解除关联"-->
+    <!--android:textSize="16dp"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/User_Click_JieChuWeixin"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/User_JieChu_Weixin"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:text="zhanghao"-->
+
+    <!--/>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginRight="15dp"-->
+    <!--android:src="@drawable/noweixin4x"/>-->
+
+    <!--</RelativeLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="64dp">-->
+
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_weight="1">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/User_GuanLian_QQ"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:text="关联qq账号"-->
+    <!--android:textSize="16dp"-->
+
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/User_Click_GuanLianQQ"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/User_GuanLian_QQ"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:text="点击关联"-->
+
+    <!--/>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginRight="15dp"-->
+    <!--android:src="@drawable/noqq4x"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"></RelativeLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/Day_relative"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+    >
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/mText_JieHun"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:text="距离结婚纪念日"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/mText_Day365"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/mText_JieHun"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:text="365"-->
+    <!--android:textColor="#000000"-->
+    <!--android:textSize="27dp"-->
+    <!--android:visibility="gone"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/mText_JieHun"-->
+    <!--android:layout_toRightOf="@+id/mText_Day365"-->
+    <!--android:text="天"-->
+    <!--android:visibility="gone"/>-->
+
+    <!--</RelativeLayout>-->
+    <TextView
+        android:id="@+id/mText_JieHun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:text="距离结婚纪念日"/>
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/mText_JieHun"
+        android:background="#E6E6E6"/>
+
+</RelativeLayout>

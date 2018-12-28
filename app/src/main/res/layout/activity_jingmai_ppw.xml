@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+		>
+
+	<RelativeLayout
+			android:id="@+id/relative"
+			android:layout_width="@dimen/dp_285"
+			android:layout_height="match_parent"
+			android:layout_above="@+id/jingmai_but_ppw"
+			android:layout_centerInParent="true"
+			android:layout_marginTop="@dimen/dp_32"
+			android:background="@drawable/sanjiaojing"
+			android:layout_marginBottom="@dimen/dp_16"
+			>
+
+
+		<ImageView
+				android:id="@+id/jingmai_image_ppw"
+				android:layout_width="match_parent"
+				android:layout_height="200dp"/>
+
+
+		<TextView
+				android:id="@+id/jingmai_time_ppw"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/jingmai_image_ppw"
+				android:layout_marginLeft="25dp"
+				android:layout_marginTop="8dp"
+				android:text="12点到2点"
+				android:textColor="#333333"
+				android:textSize="16dp"
+				android:visibility="gone"
+				/>
+
+		<ListView
+				android:id="@+id/Jingmai_listview_ppw"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/jingmai_time_ppw"
+				android:layout_marginLeft="16dp"
+				android:layout_marginRight="16dp"
+				android:layout_marginTop="@dimen/dp_16"
+				android:scrollbars="none"/>
+
+	</RelativeLayout>
+
+
+	<Button
+			android:id="@+id/jingmai_but_ppw"
+			android:layout_width="match_parent"
+			android:layout_height="44dp"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="25dp"
+			android:layout_marginLeft="45dp"
+			android:layout_marginRight="45dp"
+			android:layout_marginTop="16dp"
+			android:background="@drawable/shape_life_but_ppw"
+			android:text="返回"
+			android:textColor="@color/white"
+			android:textSize="16dp"
+			/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/Chiyao_mTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="药品名称"
+            android:textColor="#333333"
+            android:textSize="18dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Chiyao_mTextName"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/chiyao_relativeview"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/ChiYao_mTextTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日 9:00"
+                android:textColor="@color/colorTextYangXIn"
+
+                />
+
+            <TextView
+                android:id="@+id/ChiYao_mTextMinute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ChiYao_mTextTime"
+                android:text="22"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ChiYao_mTextTime"
+                android:layout_toRightOf="@+id/ChiYao_mTextMinute"
+                android:text="分钟" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/more_black_man" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/Chiyao_mTextName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="药品名称"
+            android:textColor="#333333"
+            android:textSize="18dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Chiyao_mTextName2"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/chiyao_relativeview"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/ChiYao_mTextTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日 9:00"
+                android:textColor="@color/colorTextYangXIn"
+
+                />
+
+            <TextView
+                android:id="@+id/ChiYao_mTextMinute2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ChiYao_mTextTime2"
+                android:text="22"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ChiYao_mTextTime2"
+                android:layout_toRightOf="@+id/ChiYao_mTextMinute2"
+                android:text="分钟" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/more_black_man" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

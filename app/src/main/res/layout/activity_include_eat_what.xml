@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="130dp"
+              android:orientation="horizontal"
+
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/Life_year_relative"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/date_man_4x"
+
+        >
+
+        <TextView
+            android:id="@+id/Life_Text_dingyou_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="丁酉年"
+            android:textColor="@color/white"
+
+            />
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:id="@+id/Life_Text_nongli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Life_Text_dingyou_year"
+            android:layout_centerHorizontal="true"
+            android:text="农历"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/Life_Text_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Life_Text_nongli"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="22"
+            android:textColor="@color/Black"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/Life_Text_Year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Life_Text_day"
+            android:layout_centerHorizontal="true"
+            android:text="2017/11"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Life_jianyi_relative"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/Life_Image_Yundongsuggest"
+            android:layout_width="73dp"
+            android:layout_height="44dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/jcwz"
+            />
+
+        <TextView
+
+            android:id="@+id/Life_Text_YundongSuggest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Life_Image_Yundongsuggest"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="修身养性"
+            android:textColor="@color/Black"
+            />
+
+        <TextView
+            android:id="@+id/Life_Text_lidong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="立冬来了"
+            android:textSize="12dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Life_edt_relative"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/Life_Image_Eatsuggest"
+            android:layout_width="73dp"
+            android:layout_height="44dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/jcwz"
+            />
+
+        <TextView
+
+            android:id="@+id/Life_Text_eatSuggest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Life_Image_Eatsuggest"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="每日饮食"
+            android:textColor="@color/Black"
+            />
+
+        <TextView
+            android:id="@+id/Life_Text_eat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:ellipsize="end"
+            android:text="吃苹果"
+            android:textSize="12dp"
+
+            />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

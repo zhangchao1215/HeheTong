@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/Title_Relative"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+
+        >
+
+
+        <TextView
+            android:id="@+id/Bigcast_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="姓名"
+            android:textColor="#333333"
+            />
+
+        <LinearLayout
+            android:id="@+id/Bigcast_Add_Linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/Bigcast_Name"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:id="@+id/Bigcast_Content"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Bigcast_Name"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/Bigcast_Image"
+        android:layout_width="120dp"
+        android:layout_height="76dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/Bigcast_Zan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Bigcast_Image"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="3dp"
+        android:text="攒"
+        />
+</RelativeLayout>

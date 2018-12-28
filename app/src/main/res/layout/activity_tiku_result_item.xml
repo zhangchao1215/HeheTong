@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="110dp"
+              android:background="#E0E0E0"
+              android:id="@+id/Linear"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/tiku_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@color/color_ccc"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="22dp"
+            android:layout_toLeftOf="@+id/tiku_ceshi_text"
+            android:layout_toRightOf="@+id/tiku_image"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tiku_textOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="睡眠质量评测"
+                />
+
+            <TextView
+                android:id="@+id/tiku_textTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="2349人已测 · 准确率96%"
+                android:textSize="12dp"
+                android:textColor="@color/color999"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+             android:gravity="center"
+            android:id="@+id/tiku_ceshi_text"
+            android:layout_width="67dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@color/color_ccc"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

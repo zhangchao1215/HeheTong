@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/Faxian_shopLinear"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+    >
+
+
+    <LinearLayout
+        android:layout_width="75dp"
+        android:layout_height="120dp"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/Faxian_shopImage"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/Faxian_shopName"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:maxLength="5"
+            android:text="商品名称"
+            android:textSize="@dimen/dp_14"
+            />
+
+        <TextView
+            android:id="@+id/Faxian_shopNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:textSize="12dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

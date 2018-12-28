@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/Shop_Tuijian_Linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F0F0F0"
+                android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="180dp"
+        android:layout_height="345dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+
+        >
+
+        <ImageView
+            android:id="@+id/Shop_Tuijian_image"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"/>
+
+        <TextView
+            android:id="@+id/Shop_Tuijian_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/dp_14"
+            />
+
+        <com.example.heyikun.heheshenghuo.modle.util.ScrollGridView
+            android:id="@+id/shop_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="13dp"
+            android:numColumns="2"
+            />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="13dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="74dp"
+                android:layout_height="30dp"
+                android:background="@drawable/shape_shop_tizhi"
+                android:gravity="center"
+                android:text="所有体质"
+                android:textColor="@color/colorTextYangXIn"
+                android:textSize="@dimen/dp_14"
+                />
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Shop_Tuijian_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:text="1112"
+            android:textColor="#E97A66"
+            android:textSize="@dimen/dp_14"
+            android:maxLength="1"
+            android:ellipsize="end"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/SHop_Tuijian_oldPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="2dp"
+                android:text="2018:00"
+                android:textColor="#CCCCCC"
+                android:textSize="10dp"
+                />
+
+            <View
+                android:layout_marginLeft="14dp"
+                android:layout_centerVertical="true"
+                android:layout_width="34dp"
+                android:layout_height="1dp"
+                android:background="#cccccc"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

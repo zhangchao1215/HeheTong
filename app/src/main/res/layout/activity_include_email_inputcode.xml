@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:background="@color/colorTextYangXIn" />
+
+
+        <TextView
+            android:id="@+id/mText_Shuru_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="请输入邮箱验证码" />
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/mailbox_edit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="16dp"
+        android:background="@null"
+        android:hint="请输入"
+
+        />
+
+
+    <Button
+        android:id="@+id/mBut_Submitemail"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/next_but"
+        android:text="提交"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="24dp"
+        android:text="请打开邮箱查看邮件，将验证码输入上方输入框里若收件箱里没有，请查看广告邮件或其他文件夹，或者检查屏蔽设置" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="如没有收到验证邮件，请" />
+
+        <TextView
+            android:id="@+id/mText_resend_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击此处再次发送"
+            android:textColor="@color/colorTextYangXIn" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorTextYangXIn"
+            android:text="心脏机能"
+            android:textColor="@color/white"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp">
+
+            <com.example.heyikun.heheshenghuo.modle.CircleProgressView
+                android:id="@+id/newLife_progress"
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+
+                />
+
+            <TextView
+                android:id="@+id/new_life_fen_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="25"
+                android:textColor="@color/quan_xinzang"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/new_life_fen_text"
+                android:text="分"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="56dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:text="心脏机能重度受损"
+            android:textColor="@color/shoppingText"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorTextYangXIn"
+            android:text="小肠机能"
+            android:textColor="@color/white"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp">
+
+            <com.example.heyikun.heheshenghuo.modle.CircleProgressView
+                android:id="@+id/newLife_progress2"
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+
+                />
+
+            <TextView
+                android:id="@+id/new_life_fen_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="50"
+                android:textColor="@color/quan_xiaochang"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/new_life_fen_text2"
+                android:text="分"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="56dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:text="心脏机能重度受损"
+            android:textColor="@color/quan_xiaochang"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorTextYangXIn"
+            android:text="思虑机能"
+            android:textColor="@color/white"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp">
+
+            <com.example.heyikun.heheshenghuo.modle.CircleProgressView
+                android:id="@+id/newLife_progress3"
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+
+                />
+
+            <TextView
+                android:id="@+id/new_life_fen_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="75"
+                android:textColor="@color/quan_silv"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/new_life_fen_text3"
+                android:text="分"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="56dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:text="    轻度
+思虑过度"
+            android:textColor="@color/quan_silv"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

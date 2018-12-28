@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimary">#3F51B5</color>
+	<color name="colorPrimaryDark">#303F9F</color>
+	<color name="colorAccent">#FF4081</color>
+	<color name="ZhenDuanText">#73AAE6</color>
+	<color name="white">#ffffff</color>
+	<color name="Black">#000000</color>
+	<color name="ColorSheTaiBackground">#d7d7d7</color>
+	<color name="colorSheTaiZhenDuan">#F96F5E</color>
+	<color name="colorViewPagerText">#333333</color>
+	<color name="colorTextYangXIn">#73aae6</color>
+	<color name="colorViewLines">#F0F0F0</color>
+	<color name="colorSheTaiYinYing">#828282</color>
+	<color name="colorTextWomen">#E68073</color>
+	<color name="color_transparent">#00000000</color>
+	<color name="province_line_border">#D0D0D0</color>
+	<color name="color_d8d8d8">#e4e0e0</color>
+	<color name="color_e84515">#e84515</color>
+	<color name="colorPPw">#999999</color>
+	<color name="colorUserSetting">#efefef</color>
+	<color name="colorNext">#F5F5F5</color>
+	<color name="colorNoClick">#DDE7F1</color>
+	<color name="back_03">#ccc</color>"
+	<color name="gray_bg">#F0F0F0</color>
+	<color name="text_colot">#333333</color>
+	<color name="color_ccc">#CCCCCC</color>
+	<color name="background">#333333</color>
+	<color name="red">#FFE60517</color>
+	<color name="blue">#FF1F82ED</color>
+	<color name="zhenduan_next">#DDE7F1</color>
+	<color name="shoppingText">#e87864</color>
+	<color name="quan_xinzang">#E68073</color>
+	<color name="quan_xiaochang">#F5A623</color>
+	<color name="quan_silv">#417505</color>
+
+	<color name="quan_OneColor">#D0021B</color>
+	<color name="quan_TwoColor">#EA6E02</color>
+	<color name="quan_ThreeColor">#e7bc12</color>
+	<color name="quan_Fourlor">#8ED6ED</color>
+	<color name="quan_FiveColor">#0059D2</color>
+	<color name="color999">#999999</color>
+	<color name="colorBackPaint">#679feb</color>
+	<color name="colorWomenBack">#F96F5E</color>
+	<color name="colorCeshi">#FE953A</color>
+	<color name="colorTimeClick">#88C6FF</color>
+	<color name="fenggeLines">#E5E5E5</color>
+	<color name="colorManTitle">#73AAE6</color>
+	<color name="circleColorWomen">#F96F5E</color>
+	<color name="circleColorMan">#65A9ED</color>
+	<color name="circleTimeWomen">#FFB588</color>
+	<color name="circleTimeMan">#88C6FF</color>
+	<color name="circleBackColor">#73AAE6</color>
+	<color name="circleLine_manColor">#22EA8C</color>
+	<color name="circleLine_womanColor">#FFE7BC12</color>
+</resources>
+

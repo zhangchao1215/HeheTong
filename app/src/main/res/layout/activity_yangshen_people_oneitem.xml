@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/yangshen_lanmu_linear"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/yangsheng_lanmu_image"
+            android:layout_width="144dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="6dp"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
